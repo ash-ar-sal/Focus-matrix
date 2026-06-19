@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Focus Matrix">
+  <meta name="theme-color" content="#ffffff">
+  <title>Focus Matrix</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.33.0/dist/tabler-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app" id="app">
+
+  <!-- Header -->
+  <div class="header">
+    <div>
+      <div class="header-title">Focus Matrix</div>
+      <div class="header-sub">Eisenhower task manager</div>
+    </div>
+    <div class="header-date" id="hdate"></div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab active" onclick="switchTab('matrix')">
+      <i class="ti ti-layout-2"></i>Matrix
+    </button>
+    <button class="tab" onclick="switchTab('goals')">
+      <i class="ti ti-target"></i>Goals
+    </button>
+    <button class="tab" onclick="switchTab('today')">
+      <i class="ti ti-sun"></i>Today
+    </button>
+    <button class="tab" onclick="switchTab('progress')">
+      <i class="ti ti-chart-bar"></i>Progress
+    </button>
+  </div>
+
+  <!-- Content -->
+  <div class="content" id="content">
+
+    <!-- Matrix tab -->
+    <div class="section active" id="sec-matrix">
+      <div class="matrix-grid" id="matrix-grid"></div>
+      <button class="add-btn" onclick="openTaskModal()">
+        <i class="ti ti-plus"></i> Add new task
+      </button>
+    </div>
+
+    <!-- Goals tab -->
+    <div class="section" id="sec-goals">
+      <div id="goals-list"></div>
+      <button class="add-btn" onclick="openGoalModal()">
+        <i class="ti ti-plus"></i> Add new goal
+      </button>
+    </div>
+
+    <!-- Today tab -->
+    <div class="section" id="sec-today">
+      <div id="today-content"></div>
+    </div>
+
+    <!-- Progress tab -->
+    <div class="section" id="sec-progress">
+      <div id="progress-content"></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal root -->
+<div id="modal-root"></div>
+
+<!-- Confirm root -->
+<div id="confirm-root"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
