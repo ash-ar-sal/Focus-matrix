@@ -1,0 +1,1722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACCA APM Master Framework — Ultimate Study Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="progress-bar"><div id="progress-fill"></div></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo">APM<span>★</span>HUB</div>
+  <div class="nav-links" id="nav-links">
+    <a href="#s1">Strategy</a>
+    <a href="#s2">Performance</a>
+    <a href="#s3">Divisional</a>
+    <a href="#s4">Transfer</a>
+    <a href="#s5">Quality</a>
+    <a href="#s6">Budgeting</a>
+    <a href="#s7">Cost Mgmt</a>
+    <a href="#s8">Digital</a>
+    <a href="#s9">Behavioural</a>
+    <a href="#s10">Risk</a>
+    <a href="#s11">Public/NFP</a>
+    <a href="#s12">ESG</a>
+    <a href="#s13">Ethics</a>
+    <a href="#s14">Exam Tech</a>
+    <a href="#s15">Revision</a>
+  </div>
+  <div class="nav-search">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    <input type="text" id="search-input" placeholder="Search topics, models, KPIs…" autocomplete="off">
+    <div id="search-results"></div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-badge">Official ACCA APM Study Framework 2024/25</div>
+  <h1>Ultimate <span class="g1">APM</span> Master<br><span class="g2">Framework</span></h1>
+  <p>Every model. Every trick. Every mark. Built for students who want to actually understand — not just memorise — Advanced Performance Management.</p>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-n">40+</div><div class="stat-l">Key Models</div></div>
+    <div class="stat"><div class="stat-n">200+</div><div class="stat-l">KPI Examples</div></div>
+    <div class="stat"><div class="stat-n">15</div><div class="stat-l">Core Topics</div></div>
+    <div class="stat"><div class="stat-n">∞</div><div class="stat-l">Exam Tips</div></div>
+  </div>
+  <div class="hero-tags" id="hero-tags">
+    <span class="hero-tag" onclick="jumpSearch('Balanced Scorecard')">Balanced Scorecard</span>
+    <span class="hero-tag" onclick="jumpSearch('EVA')">EVA</span>
+    <span class="hero-tag" onclick="jumpSearch('Transfer Pricing')">Transfer Pricing</span>
+    <span class="hero-tag" onclick="jumpSearch('BCG')">BCG Matrix</span>
+    <span class="hero-tag" onclick="jumpSearch('ABC')">ABC Costing</span>
+    <span class="hero-tag" onclick="jumpSearch('Value Chain')">Value Chain</span>
+    <span class="hero-tag" onclick="jumpSearch('Beyond Budgeting')">Beyond Budgeting</span>
+    <span class="hero-tag" onclick="jumpSearch('CSR')">CSR/ESG</span>
+    <span class="hero-tag" onclick="jumpSearch('Six Sigma')">Six Sigma</span>
+    <span class="hero-tag" onclick="jumpSearch('Agency')">Agency Theory</span>
+  </div>
+</section>
+
+<!-- QUICK TOOLS -->
+<div class="quick-tools">
+  <div class="qt-card c1" onclick="openModal('crash')">
+    <div class="qt-icon">⚡</div>
+    <h4>Crash Notes</h4>
+    <p>Exam-day essentials in 5 mins</p>
+  </div>
+  <div class="qt-card c2" onclick="openModal('commands')">
+    <div class="qt-icon">🎯</div>
+    <h4>Command Verbs</h4>
+    <p>Evaluate, Assess, Advise…</p>
+  </div>
+  <div class="qt-card c3" onclick="openModal('tested')">
+    <div class="qt-icon">🔥</div>
+    <h4>Most Tested</h4>
+    <p>High-priority exam topics</p>
+  </div>
+  <div class="qt-card c4" onclick="openModal('traps')">
+    <div class="qt-icon">⚠️</div>
+    <h4>Exam Traps</h4>
+    <p>Common student disasters</p>
+  </div>
+  <div class="qt-card c5" onclick="openModal('model-select')">
+    <div class="qt-icon">🧭</div>
+    <h4>Model Selector</h4>
+    <p>Which model should I use?</p>
+  </div>
+  <div class="qt-card c6" onclick="openModal('scoring')">
+    <div class="qt-icon">📈</div>
+    <h4>Score 50+</h4>
+    <p>How to actually pass APM</p>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ SECTION 1: STRATEGIC MODELS -->
+<div class="section" id="s1">
+  <div class="section-header">
+    <div class="section-num">01</div>
+    <h2>Strategic Performance Models</h2>
+  </div>
+  <p class="section-desc">These models help you analyse the environment, position, and strategic options of a business. In APM, you use them to explain WHY a company's performance is the way it is — and what to measure.</p>
+
+  <!-- PESTEL -->
+  <div class="acc" data-tags="pestel environmental analysis strategic macro">
+    <div class="acc-head" onclick="toggleAcc(this)">
+      <div class="acc-icon" style="background:rgba(79,142,247,.12);color:var(--accent)">🌍</div>
+      <h3>PESTEL Analysis</h3>
+      <div class="acc-meta">
+        <span class="badge badge-core">CORE</span>
+        <div class="difficulty"><div class="d-dot on"></div><div class="d-dot on"></div><div class="d-dot"></div></div>
+      </div>
+      <svg class="acc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="acc-body">
+      <div class="tabs">
+        <div class="tab-nav">
+          <button class="tab-btn active" onclick="switchTab(this,'pestel-basics')">Basics</button>
+          <button class="tab-btn" onclick="switchTab(this,'pestel-exam')">ACCA Exam</button>
+          <button class="tab-btn" onclick="switchTab(this,'pestel-kpis')">KPIs</button>
+          <button class="tab-btn" onclick="switchTab(this,'pestel-example')">Example</button>
+        </div>
+        <div class="tab-panel active" id="pestel-basics">
+          <p class="body"><strong>What it is:</strong> A framework for scanning the macro-environment — all the big external forces that affect a business's performance that it can't control.</p>
+          <p class="body">Think of PESTEL like the weather forecast for a business. You can't change the weather, but you need to know it before you decide what to wear (your strategy).</p>
+          <div class="info-grid">
+            <div class="info-card"><h5 style="color:var(--accent)">Political</h5><ul><li>Government policy</li><li>Taxation changes</li><li>Trade restrictions</li><li>Political stability</li><li>Regulation</li></ul></div>
+            <div class="info-card"><h5 style="color:var(--accent3)">Economic</h5><ul><li>GDP growth/recession</li><li>Interest rates</li><li>Inflation / exchange rates</li><li>Unemployment</li><li>Consumer spending</li></ul></div>
+            <div class="info-card"><h5 style="color:var(--accent2)">Social</h5><ul><li>Demographics</li><li>Lifestyle changes</li><li>Cultural attitudes</li><li>Health consciousness</li><li>Education levels</li></ul></div>
+            <div class="info-card"><h5 style="color:var(--gold)">Technological</h5><ul><li>R&D investment</li><li>Automation</li><li>AI disruption</li><li>Data analytics</li><li>Cyber threats</li></ul></div>
+            <div class="info-card"><h5 style="color:var(--accent6)">Environmental</h5><ul><li>Climate change</li><li>Carbon regulations</li><li>Sustainability pressure</li><li>Waste management</li><li>ESG reporting</li></ul></div>
+            <div class="info-card"><h5 style="color:var(--accent5)">Legal</h5><ul><li>Employment law</li><li>Competition law</li><li>Data protection (GDPR)</li><li>Health & safety</li><li>Intellectual property</li></ul></div>
+          </div>
+          <div class="callout callout-trap"><strong>⚠️ Exam Trap:</strong> Students list PESTEL factors and stop there. ACCA wants you to ANALYSE the IMPACT on performance management — link each factor to KPIs, measurement challenges, or strategic risk.</div>
+          <p class="body"><strong>When to use:</strong> Any question asking you to explain why performance has changed, or to design a performance measurement system that reflects the external environment.</p>
+          <p class="body"><strong>When NOT to use:</strong> Don't use PESTEL to analyse internal operations — that's what Value Chain or SWOT (internal) is for.</p>
+        </div>
+        <div class="tab-panel" id="pestel-exam">
+          <div class="callout callout-exam"><strong>📋 How ACCA Usually Tests PESTEL:</strong><br>"Identify and explain the key external factors affecting [Company X]'s performance management system."<br>"Discuss how the macro-environment should be reflected in the company's KPIs."<br>"Assess the suitability of the current performance measurement system given the changing environment."</div>
+          <p class="body"><strong>Examiner Expectation:</strong> Pick 3–4 GENUINELY RELEVANT factors from the scenario (not all 6!). For each one: identify the factor → explain the impact on performance → suggest what KPI or management response is needed.</p>
+          <div class="answer-box">
+            <div class="ans-label">✍️ 5-Mark Answer Style</div>
+            <p style="font-size:.82rem;color:var(--text2);line-height:1.7"><strong>Technological disruption</strong> (PESTEL – Technology)<br>The rise of AI-powered retail platforms represents a significant technological threat to [Company X]. As competitors adopt machine-learning driven inventory management, [Company X]'s traditional approach may lead to overstocking and reduced margins. <strong>The performance management system should incorporate KPIs such as digital channel conversion rate, inventory turnover velocity, and technology investment ROI</strong> to track its response to this disruption. Without these measures, management lacks visibility into whether the business is keeping pace with industry evolution.</p>
+          </div>
+          <div class="callout callout-trap"><strong>⚠️ Common Mistake:</strong> Writing "P – political factors include government policy" with no link to the specific scenario. Generic PESTEL lists score almost ZERO marks in APM.</div>
+        </div>
+        <div class="tab-panel" id="pestel-kpis">
+          <p class="body">Each PESTEL factor should link to measurable performance indicators:</p>
+          <table class="tbl">
+            <thead><tr><th>Factor</th><th>Impact</th><th>Suggested KPI</th></tr></thead>
+            <tbody>
+              <tr><td>Political – new carbon tax</td><td>Increases cost base</td><td>Carbon cost per unit; compliance cost %</td></tr>
+              <tr><td>Economic – rising interest rates</td><td>Higher debt servicing costs</td><td>Interest cover ratio; debt-to-equity</td></tr>
+              <tr><td>Social – aging population</td><td>Changed customer needs</td><td>Customer age demographic mix; product mix revenue</td></tr>
+              <tr><td>Technological – AI adoption</td><td>Efficiency opportunity/threat</td><td>Automation rate; process cycle time; tech investment ROI</td></tr>
+              <tr><td>Environmental – climate targets</td><td>Regulatory compliance risk</td><td>CO₂ emissions per unit; sustainability score</td></tr>
+              <tr><td>Legal – data protection</td><td>Compliance costs; reputational risk</td><td>Data breach incidents; compliance audit score</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tab-panel" id="pestel-example">
+          <div class="example-box">
+            <div class="ex-label">🏢 Industry Example – Retail Supermarket</div>
+            <p>A supermarket chain faces these PESTEL pressures affecting its APM system:</p>
+            <ul class="styled mt8">
+              <li><strong>Political:</strong> Sugar tax increases → KPI: reformulated product % of range</li>
+              <li><strong>Economic:</strong> Cost-of-living crisis → KPI: own-brand product sales growth, basket size</li>
+              <li><strong>Social:</strong> Health-conscious consumers → KPI: healthy product revenue %, vegan SKU growth</li>
+              <li><strong>Tech:</strong> Online delivery growth → KPI: online revenue %, fulfillment cost per order</li>
+              <li><strong>Environmental:</strong> Plastic reduction targets → KPI: plastic packaging reduction %, food waste %</li>
+              <li><strong>Legal:</strong> Employment law changes → KPI: staff turnover, training compliance %</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PORTER'S FIVE FORCES -->
+  <div class="acc" data-tags="porter five forces competitive strategy industry">
+    <div class="acc-head" onclick="toggleAcc(this)">
+      <div class="acc-icon" style="background:rgba(124,92,252,.12);color:var(--accent2)">⚔️</div>
+      <h3>Porter's Five Forces</h3>
+      <div class="acc-meta">
+        <span class="badge badge-hot">HOT</span>
+        <div class="difficulty"><div class="d-dot on"></div><div class="d-dot on"></div><div class="d-dot on"></div></div>
+      </div>
+      <svg class="acc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="acc-body">
+      <div class="tabs">
+        <div class="tab-nav">
+          <button class="tab-btn active" onclick="switchTab(this,'p5f-basics')">Basics</button>
+          <button class="tab-btn" onclick="switchTab(this,'p5f-exam')">ACCA Exam</button>
+          <button class="tab-btn" onclick="switchTab(this,'p5f-visual')">Visual Map</button>
+        </div>
+        <div class="tab-panel active" id="p5f-basics">
+          <p class="body"><strong>What it is:</strong> A framework to assess the <em>competitive intensity</em> of an industry. High competitive intensity = harder to make profit = tougher performance targets.</p>
+          <p class="body">Porter says profitability in any industry is determined by 5 forces. The stronger these forces, the harder it is for companies to make money — which directly affects what performance targets are realistic.</p>
+          <div class="info-grid">
+            <div class="info-card"><h5>1. Competitive Rivalry</h5><ul><li>How many competitors?</li><li>How similar are products?</li><li>Price wars?</li><li>Slow industry growth?</li></ul></div>
+            <div class="info-card"><h5>2. Threat of New Entrants</h5><ul><li>How easy to enter the market?</li><li>Capital requirements?</li><li>Brand loyalty barriers?</li><li>Economies of scale?</li></ul></div>
+            <div class="info-card"><h5>3. Supplier Power</h5><ul><li>Few suppliers = high power</li><li>Switching costs</li><li>Unique inputs</li><li>Forward integration threat</li></ul></div>
+            <div class="info-card"><h5>4. Buyer Power</h5><ul><li>Large/concentrated buyers</li><li>Price sensitivity</li><li>Product standardisation</li><li>Backward integration</li></ul></div>
+            <div class="info-card"><h5>5. Threat of Substitutes</h5><ul><li>Alternative products</li><li>Price/performance of substitutes</li><li>Switching costs for buyers</li></ul></div>
+          </div>
+          <div class="callout callout-tip"><strong>💡 APM Link:</strong> Five Forces tells you HOW DIFFICULT the competitive environment is → this should shape the performance management system. High rivalry = need strong pricing KPIs. High buyer power = need customer retention metrics.</div>
+        </div>
+        <div class="tab-panel" id="p5f-exam">
+          <div class="callout callout-exam"><strong>📋 How ACCA Tests This:</strong><br>"Explain how the competitive environment should inform [Company X]'s choice of KPIs."<br>"Assess the strategic position of [Company X] using appropriate strategic models."<br>"Advise management on how to adapt its performance management system to reflect competitive pressures."</div>
+          <div class="answer-box">
+            <div class="ans-label">✍️ 10-Mark Evaluation Style</div>
+            <p style="font-size:.82rem;color:var(--text2);line-height:1.7">Strong buyer power (Force 4): [Company X] sells predominantly to four major retail chains who collectively account for 78% of revenue. This concentration of buyer power creates significant margin pressure as buyers routinely demand price reductions and extended credit terms. <strong>The performance management system must therefore incorporate KPIs measuring customer profitability by account, credit days outstanding, and discount rate by customer segment.</strong> Without this granularity, senior management cannot identify which relationships are value-destructive and take corrective action. Furthermore, measuring customer satisfaction scores for each key account would provide early warning of relationship deterioration that could result in contract loss.</p>
+          </div>
+          <div class="callout callout-trap"><strong>⚠️ Exam Trap:</strong> Don't just DESCRIBE the five forces — APPLY them. The examiner wants to see the LINK between competitive forces and performance measurement choices.</div>
+        </div>
+        <div class="tab-panel" id="p5f-visual">
+          <div style="background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin:12px 0;text-align:center">
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:auto auto auto;gap:10px;align-items:center">
+              <div></div>
+              <div style="background:rgba(124,92,252,.1);border:1px solid rgba(124,92,252,.3);border-radius:8px;padding:10px;font-size:.75rem;color:var(--accent2);font-weight:700">⬇️ New Entrants<br><span style="color:var(--text3);font-weight:400">Threat of Entry</span></div>
+              <div></div>
+              <div style="background:rgba(247,168,79,.1);border:1px solid rgba(247,168,79,.3);border-radius:8px;padding:10px;font-size:.75rem;color:var(--accent4);font-weight:700">◀ Suppliers<br><span style="color:var(--text3);font-weight:400">Bargaining Power</span></div>
+              <div style="background:linear-gradient(135deg,rgba(79,142,247,.15),rgba(124,92,252,.15));border:1px solid var(--accent);border-radius:8px;padding:14px;font-size:.85rem;color:var(--text);font-weight:700">Industry<br>Rivalry ⚔️</div>
+              <div style="background:rgba(0,212,170,.1);border:1px solid rgba(0,212,170,.3);border-radius:8px;padding:10px;font-size:.75rem;color:var(--accent3);font-weight:700">Buyers ▶<br><span style="color:var(--text3);font-weight:400">Bargaining Power</span></div>
+              <div></div>
+              <div style="background:rgba(247,95,95,.1);border:1px solid rgba(247,95,95,.3);border-radius:8px;padding:10px;font-size:.75rem;color:var(--accent5);font-weight:700">⬆️ Substitutes<br><span style="color:var(--text3);font-weight:400">Threat of Substitution</span></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VALUE CHAIN -->
+  <div class="acc" data-tags="value chain porter internal activities competitive advantage">
+    <div class="acc-head" onclick="toggleAcc(this)">
+      <div class="acc-icon" style="background:rgba(0,212,170,.1);color:var(--accent3)">🔗</div>
+      <h3>Porter's Value Chain</h3>
+      <div class="acc-meta">
+        <span class="badge badge-hot">HOT</span>
+        <div class="difficulty"><div class="d-dot on"></div><div class="d-dot on"></div><div class="d-dot on"></div></div>
+      </div>
+      <svg class="acc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="acc-body">
+      <p class="body"><strong>What it is:</strong> A model showing all the activities a business performs to create and deliver its product/service — and where value (profit) is added at each step.</p>
+      <p class="body">Think of it as an X-ray of the business. You can see where costs accumulate and where competitive advantage actually comes from.</p>
+      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:16px;margin:14px 0">
+        <div style="font-size:.75rem;color:var(--text3);margin-bottom:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px">Support Activities</div>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:12px">
+          <div style="background:rgba(124,92,252,.08);border:1px solid rgba(124,92,252,.2);border-radius:6px;padding:8px;font-size:.72rem;text-align:center;color:var(--accent2)">Firm Infrastructure</div>
+          <div style="background:rgba(124,92,252,.08);border:1px solid rgba(124,92,252,.2);border-radius:6px;padding:8px;font-size:.72rem;text-align:center;color:var(--accent2)">HR Management</div>
+          <div style="background:rgba(124,92,252,.08);border:1px solid rgba(124,92,252,.2);border-radius:6px;padding:8px;font-size:.72rem;text-align:center;color:var(--accent2)">Technology Dev</div>
+          <div style="background:rgba(124,92,252,.08);border:1px solid rgba(124,92,252,.2);border-radius:6px;padding:8px;font-size:.72rem;text-align:center;color:var(--accent2)">Procurement</div>
+        </div>
+        <div style="font-size:.75rem;color:var(--text3);margin-bottom:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px">Primary Activities</div>
+        <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:6px;align-items:center">
+          <div style="background:rgba(79,142,247,.1);border:1px solid rgba(79,142,247,.25);border-radius:6px;padding:10px;font-size:.72rem;text-align:center;color:var(--accent)">Inbound Logistics</div>
+          <div style="background:rgba(79,142,247,.1);border:1px solid rgba(79,142,247,.25);border-radius:6px;padding:10px;font-size:.72rem;text-align:center;color:var(--accent)">Operations</div>
+          <div style="background:rgba(79,142,247,.1);border:1px solid rgba(79,142,247,.25);border-radius:6px;padding:10px;font-size:.72rem;text-align:center;color:var(--accent)">Outbound Logistics</div>
+          <div style="background:rgba(79,142,247,.1);border:1px solid rgba(79,142,247,.25);border-radius:6px;padding:10px;font-size:.72rem;text-align:center;color:var(--accent)">Marketing & Sales</div>
+          <div style="background:rgba(79,142,247,.1);border:1px solid rgba(79,142,247,.25);border-radius:6px;padding:10px;font-size:.72rem;text-align:center;color:var(--accent)">Service</div>
+        </div>
+        <div style="text-align:right;margin-top:10px;font-size:.75rem;color:var(--gold);font-weight:700">→ MARGIN / VALUE →</div>
+      </div>
+      <div class="callout callout-exam"><strong>📋 ACCA Tests Value Chain as:</strong> "Identify the value-adding activities and assess performance measurement opportunities" — Link each activity to a KPI. Show where costs are vs where value is created. Identify where the company has competitive advantage.</div>
+      <div class="callout callout-trap"><strong>⚠️ Exam Trap:</strong> Don't just list the activities. You must identify WHICH activities are sources of competitive advantage in the specific scenario, and WHAT KPIs should measure performance in those activities.</div>
+      <div class="answer-box">
+        <div class="ans-label">✍️ Application Example</div>
+        <p style="font-size:.82rem;color:var(--text2);line-height:1.7">For an airline, competitive advantage lies in <strong>Operations</strong> (on-time performance, turnaround efficiency) and <strong>Service</strong> (in-flight experience, loyalty programme). KPIs: on-time departure rate (target: 85%+), aircraft utilisation rate (hours/day), customer satisfaction score (NPS), loyalty programme active members growth.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- BCG MATRIX -->
+  <div class="acc" data-tags="bcg boston matrix portfolio stars cash cows dogs question marks">
+    <div class="acc-head" onclick="toggleAcc(this)">
+      <div class="acc-icon" style="background:rgba(245,200,66,.1);color:var(--gold)">📊</div>
+      <h3>BCG Matrix (Portfolio Analysis)</h3>
+      <div class="acc-meta">
+        <span class="badge badge-core">CORE</span>
+        <div class="difficulty"><div class="d-dot on"></div><div class="d-dot on"></div><div class="d-dot"></div></div>
+      </div>
+      <svg class="acc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="acc-body">
+      <p class="body"><strong>What it is:</strong> A portfolio planning tool that classifies a company's business units or products based on market growth rate and relative market share.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0">
+        <div style="background:rgba(245,200,66,.08);border:1px solid rgba(245,200,66,.25);border-radius:8px;padding:14px">
+          <div style="font-size:1.4rem;margin-bottom:6px">⭐</div>
+          <div style="font-family:'Syne',sans-serif;font-size:.9rem;font-weight:700;color:var(--gold);margin-bottom:6px">Stars</div>
+          <div style="font-size:.75rem;color:var(--text2)">High growth, High share. Invest heavily. Future cash cows.</div>
+          <div style="font-size:.7rem;color:var(--text3);margin-top:6px">KPIs: Market share growth, Revenue growth rate</div>
+        </div>
+        <div style="background:rgba(247,95,95,.08);border:1px solid rgba(247,95,95,.25);border-radius:8px;padding:14px">
+          <div style="font-size:1.4rem;margin-bottom:6px">❓</div>
+          <div style="font-family:'Syne',sans-serif;font-size:.9rem;font-weight:700;color:var(--accent5);margin-bottom:6px">Question Marks</div>
+          <div style="font-size:.75rem;color:var(--text2)">High growth, Low share. Invest selectively or divest. High risk.</div>
+          <div style="font-size:.7rem;color:var(--text3);margin-top:6px">KPIs: Market share gain, investment ROI</div>
+        </div>
+        <div style="background:rgba(0,212,170,.08);border:1px solid rgba(0,212,170,.25);border-radius:8px;padding:14px">
+          <div style="font-size:1.4rem;margin-bottom:6px">🐄</div>
+          <div style="font-family:'Syne',sans-serif;font-size:.9rem;font-weight:700;color:var(--accent3);margin-bottom:6px">Cash Cows</div>
+          <div style="font-size:.75rem;color:var(--text2)">Low growth, High share. Harvest cash. Minimal investment needed.</div>
+          <div style="font-size:.7rem;color:var(--text3);margin-top:6px">KPIs: Cash generation, Profit margin, Cost efficiency</div>
+        </div>
+        <div style="background:rgba(99,107,130,.1);border:1px solid var(--border2);border-radius:8px;padding:14px">
+          <div style="font-size:1.4rem;margin-bottom:6px">🐕</div>
+          <div style="font-family:'Syne',sans-serif;font-size:.9rem;font-weight:700;color:var(--text3);margin-bottom:6px">Dogs</div>
+          <div style="font-size:.75rem;color:var(--text2)">Low growth, Low share. Divest or manage for cash. No future here.</div>
+          <div style="font-size:.7rem;color:var(--text3);margin-top:6px">KPIs: Divestment value, exit cost minimisation</div>
+        </div>
+      </div>
+      <div class="callout callout-exam"><strong>📋 How ACCA Tests BCG:</strong> "Classify each division and recommend appropriate performance measures" — Classify using the data → explain implications → recommend different KPI focus for each type → discuss resource allocation consequences.</div>
+      <div class="callout callout-trap"><strong>⚠️ Limitation:</strong> BCG is a simplification. "Dog" divisions might have strategic value (e.g., completing the product range, maintaining supplier relationships). ACCA loves asking you to critique the model.</div>
+    </div>
+  </div>
+
+  <!-- ANSOFF -->
+  <div class="acc" data-tags="ansoff matrix growth strategy market product penetration development diversification">
+    <div class="acc-head" onclick="toggleAcc(this)">
+      <div class="acc-icon" style="background:rgba(168,224,99,.1);color:var(--accent6)">🚀</div>
+      <h3>Ansoff Matrix (Growth Strategy)</h3>
+      <div class="acc-meta">
+        <span class="badge badge-core">CORE</span>
+        <div class="difficulty"><div class="d-dot on"></div><div class="d-dot on"></div><div class="d-dot"></div></div>
+      </div>
+      <svg class="acc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="acc-body">
+      <p class="body">Ansoff asks: "How should a company grow?" It maps four strategies based on whether markets and products are new or existing.</p>
+      <table class="tbl">
+        <thead><tr><th></th><th>Existing Products</th><th>New Products</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Existing Markets</strong></td><td style="color:var(--accent3)">Market Penetration (Lowest Risk)<br><span style="font-size:.72rem;color:var(--text3)">Sell more of same to same customers</span></td><td style="color:var(--accent)">Product Development<br><span style="font-size:.72rem;color:var(--text3)">New products to existing customers</span></td></tr>
+          <tr><td><strong>New Markets</strong></td><td style="color:var(--accent4)">Market Development<br><span style="font-size:.72rem;color:var(--text3)">Same products to new customers/geographies</span></td><td style="color:var(--accent5)">Diversification (Highest Risk)<br><span style="font-size:.72rem;color:var(--text3)">New products, new markets</span></td></tr>
+        </tbody>
+      </table>
+      <div class="callout callout-exam"><strong>📋 APM Link:</strong> Different growth strategies need different KPIs. Market penetration → customer retention rate, market share. Diversification → new venture ROCE, milestone achievement vs plan.</div>
+    </div>
+  </div>
+
+  <!-- SWOT -->
+  <div class="acc" data-tags="swot strengths weaknesses opportunities threats strategic analysis">
+    <div class="acc-head" onclick="toggleAcc(this)">
+      <div class="acc-icon" style="background:rgba(247,168,79,.1);color:var(--accent4)">🎯</div>
+      <h3>SWOT Analysis</h3>
+      <div class="acc-meta">
+        <span class="badge badge-core">CORE</span>
+      </div>
+      <svg class="acc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="acc-body">
+      <p class="body"><strong>What it is:</strong> Internal (Strengths/Weaknesses) + External (Opportunities/Threats) scan. In APM, it helps identify what the performance management system should focus on — and what risks to measure.</p>
+      <div class="callout callout-exam"><strong>📋 ACCA use of SWOT in APM:</strong> Not usually tested standalone. Used to INTRODUCE a strategic analysis, then link to appropriate performance measures. "The company's strength in brand equity (Strength) should be measured through brand value metrics and Net Promoter Score."</div>
+      <div class="callout callout-trap"><strong>⚠️ Exam Trap:</strong> Never just produce a SWOT grid and stop. In APM, every strength/weakness/opportunity/threat must link to a performance management implication or KPI recommendation.</div>
+    </div>
+  </div>
+
+  <!-- MENDELOW -->
+  <div class="acc" data-tags="mendelow stakeholder matrix power interest mapping">
+    <div class="acc-head" onclick="toggleAcc(this)">
+      <div class="acc-icon" style="background:rgba(79,142,247,.1);color:var(--accent)">👥</div>
+      <h3>Mendelow's Stakeholder Matrix</h3>
+      <div class="acc-meta">
+        <span class="badge badge-core">CORE</span>
+      </div>
+      <svg class="acc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="acc-body">
+      <p class="body"><strong>What it is:</strong> Maps stakeholders by their Power (ability to affect the business) and Interest (how much they care). This shapes what the performance management system needs to report on.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0">
+        <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:12px"><div style="font-size:.75rem;font-weight:700;color:var(--text3);margin-bottom:6px">Low Power / Low Interest</div><div style="font-size:.78rem;color:var(--text2)">→ Minimal effort. Monitor occasionally.</div></div>
+        <div style="background:rgba(79,142,247,.06);border:1px solid rgba(79,142,247,.2);border-radius:8px;padding:12px"><div style="font-size:.75rem;font-weight:700;color:var(--accent);margin-bottom:6px">Low Power / High Interest</div><div style="font-size:.78rem;color:var(--text2)">→ Keep informed. Regular reporting.</div></div>
+        <div style="background:rgba(247,168,79,.06);border:1px solid rgba(247,168,79,.2);border-radius:8px;padding:12px"><div style="font-size:.75rem;font-weight:700;color:var(--accent4);margin-bottom:6px">High Power / Low Interest</div><div style="font-size:.78rem;color:var(--text2)">→ Keep satisfied. Don't annoy them.</div></div>
+        <div style="background:rgba(0,212,170,.06);border:1px solid rgba(0,212,170,.2);border-radius:8px;padding:12px"><div style="font-size:.75rem;font-weight:700;color:var(--accent3);margin-bottom:6px">High Power / High Interest</div><div style="font-size:.78rem;color:var(--text2)">→ Key players. Manage closely. Regular engagement.</div></div>
+      </div>
+      <div class="callout callout-exam"><strong>📋 ACCA Link:</strong> Used to identify whose objectives should be prioritised in a performance management system. High Power / High Interest stakeholders' KPIs must be central to the reporting system.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ SECTION 2: PERFORMANCE SYSTEMS -->
+<div class="section" id="s2">
+  <div class="section-header">
+    <div class="section-num">02</div>
+    <h2>Performance Measurement Systems</h2>
+  </div>
+  <p class="section-desc">These are the frameworks for DESIGNING and EVALUATING how a business measures its overall performance. APM tests these heavily — you must know advantages, limitations, and when each works best.</p>
+
+  <!-- BALANCED SCORECARD -->
+  <div class="acc" data-tags="balanced scorecard bsc kaplan norton four perspectives financial customer internal learning growth">
+    <div class="acc-head" onclick="toggleAcc(this)">
+      <div class="acc-icon" style="background:rgba(79,142,247,.12);color:var(--accent)">⚖️</div>
+      <h3>Balanced Scorecard (BSC)</h3>
+      <div class="acc-meta">
+        <span class="badge badge-hot">🔥 VERY HOT</span>
+        <div class="difficulty"><div class="d-dot on"></div><div class="d-dot on"></div><div class="d-dot on"></div></div>
+      </div>
+      <svg class="acc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="acc-body">
+      <div class="tabs">
+        <div class="tab-nav">
+          <button class="tab-btn active" onclick="switchTab(this,'bsc-basics')">What & Why</button>
+          <button class="tab-btn" onclick="switchTab(this,'bsc-visual')">Visual Map</button>
+          <button class="tab-btn" onclick="switchTab(this,'bsc-exam')">ACCA Exam</button>
+          <button class="tab-btn" onclick="switchTab(this,'bsc-adv')">Pros & Cons</button>
+          <button class="tab-btn" onclick="switchTab(this,'bsc-answer')">Answer Examples</button>
+        </div>
+        <div class="tab-panel active" id="bsc-basics">
+          <p class="body"><strong>The Problem BSC Solves:</strong> Traditional performance management only looked at financial numbers (profit, ROI). But financial results are LAGGING indicators — they tell you what already happened. By the time you see poor profits, it might be too late to fix the underlying problem.</p>
+          <p class="body"><strong>Kaplan & Norton's Solution:</strong> Measure performance from FOUR perspectives simultaneously. Financial results are the outcome of getting the other three perspectives right.</p>
+          <p class="body">Think of it like this: Financial perspective = the scoreboard. The other three tell you HOW you're playing the game.</p>
+          <div class="callout callout-gold"><strong>⭐ Core Concept:</strong> BSC creates a CAUSAL CHAIN. If you improve Learning & Growth → better Internal Processes → better Customer outcomes → better Financial results. Strategy maps show this linkage visually.</div>
+        </div>
+        <div class="tab-panel" id="bsc-visual">
+          <div class="bsc-center">🎯 VISION & STRATEGY</div>
+          <div class="bsc-map">
+            <div class="bsc-quad bsc-q1">
+              <h5>💰 Financial Perspective</h5>
+              <p style="font-size:.72rem;color:var(--text3);margin-bottom:8px">"How do we look to shareholders?"</p>
+              <ul>
+                <li>Revenue growth %</li>
+                <li>ROCE / ROI</li>
+                <li>Economic Value Added (EVA)</li>
+                <li>Operating profit margin</li>
+                <li>Cost reduction targets</li>
+                <li>Shareholder value (TSR)</li>
+              </ul>
+            </div>
+            <div class="bsc-quad bsc-q2">
+              <h5>😊 Customer Perspective</h5>
+              <p style="font-size:.72rem;color:var(--text3);margin-bottom:8px">"How do customers see us?"</p>
+              <ul>
+                <li>Customer satisfaction score</li>
+                <li>Net Promoter Score (NPS)</li>
+                <li>Market share %</li>
+                <li>Customer retention rate</li>
+                <li>New customer acquisition cost</li>
+                <li>On-time delivery %</li>
+              </ul>
+            </div>
+            <div class="bsc-quad bsc-q3">
+              <h5>⚙️ Internal Process</h5>
+              <p style="font-size:.72rem;color:var(--text3);margin-bottom:8px">"What must we excel at?"</p>
+              <ul>
+                <li>Process cycle time</li>
+                <li>Defect rate / rework %</li>
+                <li>Order fulfillment time</li>
+                <li>Production efficiency %</li>
+                <li>Innovation pipeline value</li>
+                <li>IT system uptime</li>
+              </ul>
+            </div>
+            <div class="bsc-quad bsc-q4">
+              <h5>🧠 Learning & Growth</h5>
+              <p style="font-size:.72rem;color:var(--text3);margin-bottom:8px">"Can we continue to improve?"</p>
+              <ul>
+                <li>Employee satisfaction score</li>
+                <li>Staff turnover %</li>
+                <li>Training hours per employee</li>
+                <li>Skills gap % filled</li>
+                <li>R&D spend as % revenue</li>
+                <li>Digital capability index</li>
+              </ul>
+            </div>
+          </div>
+          <div class="callout callout-tip"><strong>💡 Strategy Map Concept:</strong> BSC isn't just metrics — it's a CAUSAL STORY. Draw arrows: Training → Process improvement → Customer satisfaction → Revenue growth. ACCA loves when you explain the linkages between perspectives.</div>
+        </div>
+        <div class="tab-panel" id="bsc-exam">
+          <div class="callout callout-exam"><strong>📋 How ACCA Tests the BSC (Very Frequently):</strong></div>
+          <ul class="styled">
+            <li>"Recommend a balanced scorecard for [Company X] with appropriate KPIs"</li>
+            <li>"Evaluate the suitability of the existing performance management system for [Company X] — suggest improvements"</li>
+            <li>"Discuss the limitations of the BSC in the context of [Company X]"</li>
+            <li>"Assess whether the current KPIs reflect a balanced approach"</li>
+            <li>"Advise on how BSC could help align [Company X]'s performance measures with its strategy"</li>
+          </ul>
+          <div class="answer-box">
+            <div class="ans-label">✍️ 10-Mark Evaluation Answer Framework</div>
+            <ol class="styled mt8" style="list-style:decimal;padding-left:20px">
+              <li style="color:var(--text2);font-size:.82rem;margin-bottom:8px"><strong>Identify the problem</strong> — "The current system is over-reliant on financial measures such as ROI and profit margin…"</li>
+              <li style="color:var(--text2);font-size:.82rem;margin-bottom:8px"><strong>Introduce BSC</strong> — "Kaplan and Norton's Balanced Scorecard addresses this by measuring performance across four perspectives…"</li>
+              <li style="color:var(--text2);font-size:.82rem;margin-bottom:8px"><strong>Apply each perspective to the scenario</strong> — For each: name the perspective → explain WHY it matters for this company → give 2 specific KPIs with rationale</li>
+              <li style="color:var(--text2);font-size:.82rem;margin-bottom:8px"><strong>Explain the causal linkage</strong> — "Improving employee training (L&G) will reduce defects (Internal) leading to higher customer satisfaction (Customer) which drives revenue growth (Financial)…"</li>
+              <li style="color:var(--text2);font-size:.82rem;margin-bottom:8px"><strong>Evaluate limitations</strong> — "However, BSC implementation is resource-intensive and requires cultural change…"</li>
+            </ol>
+          </div>
+          <div class="callout callout-trap"><strong>⚠️ Top Exam Traps:</strong><br>1. Recommending generic KPIs not linked to the scenario<br>2. Ignoring the CAUSAL LINKAGE between perspectives<br>3. Forgetting to say HOW each KPI is measured and by whom<br>4. Not discussing implementation challenges when asked to evaluate</div>
+        </div>
+        <div class="tab-panel" id="bsc-adv">
+          <div class="info-grid">
+            <div class="info-card"><h5 style="color:var(--accent3)">✅ Advantages</h5><ul>
+              <li>Links strategy to operational measures</li>
+              <li>Balances short-term & long-term performance</li>
+              <li>Reduces short-termism — not just financials</li>
+              <li>Communicates strategy to all levels</li>
+              <li>Identifies leading indicators (not just lagging)</li>
+              <li>Supports goal congruence across organisation</li>
+            </ul></div>
+            <div class="info-card"><h5 style="color:var(--accent5)">❌ Disadvantages</h5><ul>
+              <li>Difficult and costly to implement</li>
+              <li>Risk of too many measures (information overload)</li>
+              <li>Perspectives not always equal — financial may dominate</li>
+              <li>Requires cultural change and buy-in</li>
+              <li>Causal links are assumed, not proven</li>
+              <li>May not suit all organisation types</li>
+            </ul></div>
+          </div>
+          <div class="callout callout-warn"><strong>📝 When BSC Doesn't Work Well:</strong> Small businesses (too complex), rapidly changing environments (strategy shifts too fast), organisations where perspectives don't map neatly (e.g., some public sector contexts — use Fitzgerald & Moon instead).</div>
+        </div>
+        <div class="tab-panel" id="bsc-answer">
+          <div class="scenario-box">
+            <div class="sc-label">📖 Scenario: Online Retailer losing customer loyalty</div>
+            <p style="font-size:.82rem;color:var(--text2)">FastShop Ltd has seen profit fall 15% despite revenue growth of 8%. Customer complaints have risen 40%. Staff turnover is 35%.</p>
+          </div>
+          <div class="answer-box">
+            <div class="ans-label">✍️ Recommended BSC KPIs with Justification</div>
+            <p style="font-size:.82rem;color:var(--text2);line-height:1.7"><strong>Customer Perspective:</strong> Customer complaints rate and repeat purchase rate — these directly address the identified problem of declining loyalty. NPS should be measured monthly with a target improvement of +15 points within 12 months.<br><br><strong>Internal Process:</strong> Order fulfilment accuracy (target 99.5%) and delivery-on-time rate — as poor fulfilment is likely driving customer complaints.<br><br><strong>Learning & Growth:</strong> Staff turnover rate (target: reduce from 35% to under 20%) and training completion rate — high turnover explains operational errors and poor customer service.<br><br><strong>Financial:</strong> Customer lifetime value and customer acquisition cost — revenue growth masking declining profitability per customer suggests pricing or cost issues.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PERFORMANCE PRISM -->
+  <div class="acc" data-tags="performance prism neely stakeholder satisfaction contribution strategy processes capabilities">
+    <div class="acc-head" onclick="toggleAcc(this)">
+      <div class="acc-icon" style="background:rgba(0,212,170,.1);color:var(--accent3)">💎</div>
+      <h3>Performance Prism (Neely)</h3>
+      <div class="acc-meta">
+        <span class="badge badge-core">CORE</span>
+        <div class="difficulty"><div class="d-dot on"></div><div class="d-dot on"></div><div class="d-dot"></div></div>
+      </div>
+      <svg class="acc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="acc-body">
+      <p class="body"><strong>What it is:</strong> An alternative to BSC that puts ALL stakeholders at the centre (not just shareholders). It recognises that businesses must satisfy multiple stakeholder groups — and the relationship goes BOTH ways.</p>
+      <p class="body"><strong>The Key Insight:</strong> Unlike BSC which starts with strategy, the Prism starts with stakeholders. "Who do we need to satisfy? What do THEY need from us? And what do WE need from them?"</p>
+      <div style="display:grid;grid-template-columns:1fr;gap:8px;margin:14px 0">
+        <div style="background:rgba(0,212,170,.06);border:1px solid rgba(0,212,170,.2);border-radius:8px;padding:12px;display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start">
+          <div style="font-size:1.2rem">1️⃣</div>
+          <div><strong style="font-size:.85rem;color:var(--accent3)">Stakeholder Satisfaction</strong><div style="font-size:.78rem;color:var(--text2);margin-top:4px">What do stakeholders want from us? (investors want returns; customers want quality; employees want fair pay; suppliers want prompt payment; regulators want compliance)</div></div>
+        </div>
+        <div style="background:rgba(79,142,247,.06);border:1px solid rgba(79,142,247,.2);border-radius:8px;padding:12px;display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start">
+          <div style="font-size:1.2rem">2️⃣</div>
+          <div><strong style="font-size:.85rem;color:var(--accent)">Stakeholder Contribution</strong><div style="font-size:.78rem;color:var(--text2);margin-top:4px">What do we need from stakeholders? (investors to provide capital; customers to provide loyalty & data; employees to provide skills & commitment; suppliers to provide reliable quality)</div></div>
+        </div>
+        <div style="background:rgba(124,92,252,.06);border:1px solid rgba(124,92,252,.2);border-radius:8px;padding:12px;display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start">
+          <div style="font-size:1.2rem">3️⃣</div>
+          <div><strong style="font-size:.85rem;color:var(--accent2)">Strategies</strong><div style="font-size:.78rem;color:var(--text2);margin-top:4px">What strategies do we need to satisfy stakeholders and generate their contributions?</div></div>
+        </div>
+        <div style="background:rgba(245,200,66,.06);border:1px solid rgba(245,200,66,.2);border-radius:8px;padding:12px;display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start">
+          <div style="font-size:1.2rem">4️⃣</div>
+          <div><strong style="font-size:.85rem;color:var(--gold)">Processes</strong><div style="font-size:.78rem;color:var(--text2);margin-top:4px">What processes must we have to execute our strategies?</div></div>
+        </div>
+        <div style="background:rgba(247,168,79,.06);border:1px solid rgba(247,168,79,.2);border-radius:8px;padding:12px;display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start">
+          <div style="font-size:1.2rem">5️⃣</div>
+          <div><strong style="font-size:.85rem;color:var(--accent4)">Capabilities</strong><div style="font-size:.78rem;color:var(--text2);margin-top:4px">What capabilities (people, technology, practices) do we need to execute our processes effectively?</div></div>
+        </div>
+      </div>
+      <div class="callout callout-exam"><strong>📋 BSC vs Performance Prism:</strong><br>BSC → starts with STRATEGY → then measures<br>Prism → starts with STAKEHOLDERS → then strategy<br><br>Use Prism when: Multiple competing stakeholders, NFP/public sector, stakeholder conflicts are a key issue in the scenario.</div>
+    </div>
+  </div>
+
+  <!-- FITZGERALD & MOON -->
+  <div class="acc" data-tags="fitzgerald moon building block results determinants dimensions standards rewards service sector">
+    <div class="acc-head" onclick="toggleAcc(this)">
+      <div class="acc-icon" style="background:rgba(168,224,99,.1);color:var(--accent6)">🏗️</div>
+      <h3>Fitzgerald & Moon — Building Block Model</h3>
+      <div class="acc-meta">
+        <span class="badge badge-hot">HOT</span>
+        <div class="difficulty"><div class="d-dot on"></div><div class="d-dot on"></div><div class="d-dot"></div></div>
+      </div>
+      <svg class="acc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="acc-body">
+      <p class="body"><strong>What it is:</strong> Designed specifically for SERVICE sector organisations. It recognises that services are different from manufacturing — they're intangible, produced and consumed simultaneously, and quality varies.</p>
+      <p class="body">The model has three "blocks": what you measure (Dimensions/Results), how you set targets (Standards), and how you motivate people (Rewards).</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin:14px 0">
+        <div style="background:rgba(79,142,247,.06);border:1px solid rgba(79,142,247,.2);border-radius:8px;padding:14px">
+          <h5 style="color:var(--accent);font-size:.85rem;margin-bottom:10px">📐 Dimensions (RESULTS + DETERMINANTS)</h5>
+          <div style="font-size:.72rem;color:var(--accent3);margin-bottom:6px;font-weight:700">Results (Outcomes):</div>
+          <ul class="styled" style="margin-bottom:10px">
+            <li style="font-size:.72rem">Financial performance</li>
+            <li style="font-size:.72rem">Competitiveness</li>
+          </ul>
+          <div style="font-size:.72rem;color:var(--accent4);margin-bottom:6px;font-weight:700">Determinants (Drivers):</div>
+          <ul class="styled">
+            <li style="font-size:.72rem">Quality of service</li>
+            <li style="font-size:.72rem">Flexibility</li>
+            <li style="font-size:.72rem">Resource utilisation</li>
+            <li style="font-size:.72rem">Innovation</li>
+          </ul>
+        </div>
+        <div style="background:rgba(0,212,170,.06);border:1px solid rgba(0,212,170,.2);border-radius:8px;padding:14px">
+          <h5 style="color:var(--accent3);font-size:.85rem;margin-bottom:10px">🎯 Standards</h5>
+          <ul class="styled">
+            <li style="font-size:.72rem"><strong>Ownership</strong> — targets must be owned by those responsible</li>
+            <li style="font-size:.72rem"><strong>Achievability</strong> — challenging but realistic</li>
+            <li style="font-size:.72rem"><strong>Equity</strong> — fair across departments/teams</li>
+          </ul>
+        </div>
+        <div style="background:rgba(245,200,66,.06);border:1px solid rgba(245,200,66,.2);border-radius:8px;padding:14px">
+          <h5 style="color:var(--gold);font-size:.85rem;margin-bottom:10px">🏆 Rewards</h5>
+          <ul class="styled">
+            <li style="font-size:.72rem"><strong>Clarity</strong> — people understand what earns reward</li>
+            <li style="font-size:.72rem"><strong>Motivation</strong> — rewards are meaningful to individuals</li>
+            <li style="font-size:.72rem"><strong>Controllability</strong> — people can actually influence the rewarded metric</li>
+          </ul>
+        </div>
+      </div>
+      <div class="callout callout-exam"><strong>📋 ACCA Tests This As:</strong> "Discuss the suitability of [Company X]'s performance management system using the building block model" — Evaluate each block, identify weaknesses, recommend improvements.</div>
+      <div class="callout callout-trap"><strong>⚠️ Key Point:</strong> Results depend on determinants. If you only measure results (profit, revenue) you're too late. You need to measure the determinants (quality, flexibility) BEFORE the results materialise. This is the whole point of the model.</div>
+    </div>
+  </div>
+
+  <!-- CSFs & KPIs -->
+  <div class="acc" data-tags="csf kpi critical success factors key performance indicators smart targets">
+    <div class="acc-head" onclick="toggleAcc(this)">
+      <div class="acc-icon" style="background:rgba(247,95,95,.1);color:var(--accent5)">🔑</div>
+      <h3>CSFs, KPIs & SMART Targets</h3>
+      <div class="acc-meta">
+        <span class="badge badge-hot">🔥 VERY HOT</span>
+        <div class="difficulty"><div class="d-dot on"></div><div class="d-dot on"></div><div class="d-dot on"></div></div>
+      </div>
+      <svg class="acc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="acc-body">
+      <p class="body"><strong>CSF = Critical Success Factor:</strong> The areas a business MUST get right to achieve its strategy. These are identified from the scenario.</p>
+      <p class="body"><strong>KPI = Key Performance Indicator:</strong> A measurable metric that tells you how well you're performing in a CSF area. Every CSF needs at least one KPI.</p>
+      <div class="callout callout-gold"><strong>⭐ The Golden Chain:</strong> Mission → Objectives → CSFs → KPIs → Targets. Each level flows from the one above.</div>
+      <div class="example-box">
+        <div class="ex-label">Example Chain</div>
+        <p style="font-size:.82rem;color:var(--text2)"><strong>Mission:</strong> "Be the most trusted airline in Europe"<br><strong>Objective:</strong> Achieve 90% on-time departure within 2 years<br><strong>CSF:</strong> Aircraft turnaround efficiency<br><strong>KPI:</strong> Average turnaround time (minutes)<br><strong>Target:</strong> Reduce from 48 to 38 minutes by Q4 2025<br><strong>SMART check:</strong> ✓ Specific ✓ Measurable ✓ Achievable ✓ Relevant ✓ Time-bound</p>
+      </div>
+      <p class="body"><strong>SMART Targets:</strong> Every KPI needs a SMART target — not just "improve customer satisfaction" but "achieve NPS of +45 by December 2025, measured through monthly survey of 1,000 customers."</p>
+      <div class="callout callout-trap"><strong>⚠️ Biggest APM Mistake:</strong> Students recommend KPIs without SMART targets. "Measure customer satisfaction" gets 0 application marks. "Achieve a Net Promoter Score of +40 within 18 months, measured through quarterly online surveys" gets full marks.</div>
+      <div class="callout callout-exam"><strong>📋 Most Common APM Requirement:</strong> "Recommend SIX KPIs for [Company X] with appropriate targets and explain how each links to strategic objectives." — This is possibly the MOST TESTED skill in the whole APM syllabus. Practise this constantly.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ SECTION 3: DIVISIONAL PERFORMANCE -->
+<div class="section" id="s3">
+  <div class="section-header">
+    <div class="section-num">03</div>
+    <h2>Divisional Performance Measurement</h2>
+  </div>
+  <p class="section-desc">When a company has multiple divisions or business units, how do you measure each one fairly? These metrics are crucial — and heavily tested.</p>
+
+  <!-- ROI RI EVA -->
+  <div class="acc" data-tags="roi return on investment ri residual income eva economic value added divisional performance">
+    <div class="acc-head" onclick="toggleAcc(this)">
+      <div class="acc-icon" style="background:rgba(0,212,170,.1);color:var(--accent3)">💹</div>
+      <h3>ROI, RI & EVA — Divisional Financial Metrics</h3>
+      <div class="acc-meta">
+        <span class="badge badge-hot">🔥 VERY HOT</span>
+        <span class="badge badge-calc">CALC</span>
+        <div class="difficulty"><div class="d-dot on"></div><div class="d-dot on"></div><div class="d-dot on"></div></div>
+      </div>
+      <svg class="acc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="acc-body">
+      <div class="tabs">
+        <div class="tab-nav">
+          <button class="tab-btn active" onclick="switchTab(this,'div-roi')">ROI</button>
+          <button class="tab-btn" onclick="switchTab(this,'div-ri')">RI</button>
+          <button class="tab-btn" onclick="switchTab(this,'div-eva')">EVA</button>
+          <button class="tab-btn" onclick="switchTab(this,'div-compare')">Compare All 3</button>
+        </div>
+        <div class="tab-panel active" id="div-roi">
+          <p class="body"><strong>ROI (Return on Investment):</strong> The classic divisional performance metric. Measures profit generated per dollar of investment.</p>
+          <div class="formula">ROI = (Divisional Profit / Net Assets) × 100%<br><span>Where: Net Assets = Total assets − Current liabilities (or Capital employed)</span></div>
+          <div class="callout callout-trap"><strong>⚠️ The ROI Dysfunctionality Problem:</strong> Imagine Division A has ROI = 20%. The company's cost of capital is 12%. Division A gets an opportunity for a new project with ROI = 16%. <br><br>For the COMPANY: Accept it (16% > 12% cost of capital → adds value)<br>For the DIVISION MANAGER: Reject it (16% < 20% current ROI → pulls down MY metric → hurts MY bonus)<br><br>This is the classic GOAL INCONGRUENCE problem with ROI. The manager acts in their own interest, against the company's interest.</div>
+          <div class="info-grid">
+            <div class="info-card"><h5 style="color:var(--accent3)">✅ ROI Advantages</h5><ul><li>Easy to understand and calculate</li><li>Comparable between divisions</li><li>Widely used in practice</li><li>Encourages asset efficiency</li></ul></div>
+            <div class="info-card"><h5 style="color:var(--accent5)">❌ ROI Disadvantages</h5><ul><li>Goal incongruence (reject positive NPV projects)</li><li>Short-termism (defer investment)</li><li>Asset base manipulation</li><li>Ignores risk differences</li><li>Historical cost bias</li></ul></div>
+          </div>
+        </div>
+        <div class="tab-panel" id="div-ri">
+          <p class="body"><strong>RI (Residual Income):</strong> Profit remaining after charging for the cost of capital used. Fixes the goal incongruence problem with ROI.</p>
+          <div class="formula">RI = Divisional Profit − (Net Assets × Cost of Capital %)<br><span>Or: RI = Profit − Capital Charge<br>Positive RI = division is creating value above the cost of capital ✓</span></div>
+          <div class="example-box">
+            <div class="ex-label">Example: Why RI Fixes ROI's Problem</div>
+            <p style="font-size:.82rem;color:var(--text2)">Division A: Profit £200k, Net Assets £1m, Cost of Capital 12%<br><strong>ROI</strong> = 200/1000 = 20%<br><strong>RI</strong> = 200 − (1000 × 12%) = 200 − 120 = <strong>£80k positive</strong><br><br>New project: Profit £32k, Assets £200k → ROI = 16%<br>Under ROI: Manager REJECTS (16% < 20% hurts metric)<br>Under RI: RI of new project = 32 − (200×12%) = 32 − 24 = +£8k POSITIVE → Accept ✓</p>
+          </div>
+          <div class="info-grid">
+            <div class="info-card"><h5 style="color:var(--accent3)">✅ RI Advantages</h5><ul><li>Eliminates goal incongruence problem</li><li>Absolute measure — shows £ value added</li><li>Accepts all positive-value projects</li><li>Different cost of capital by risk level</li></ul></div>
+            <div class="info-card"><h5 style="color:var(--accent5)">❌ RI Disadvantages</h5><ul><li>Absolute £ — hard to compare divisions of different sizes</li><li>Still based on accounting profit</li><li>Still uses historical cost asset base</li><li>Short-termism still possible</li></ul></div>
+          </div>
+        </div>
+        <div class="tab-panel" id="div-eva">
+          <p class="body"><strong>EVA (Economic Value Added):</strong> Developed by Stern Stewart. The most theoretically sophisticated measure. Adjusts accounting profit to reflect TRUE economic profit.</p>
+          <div class="formula">EVA = NOPAT − (WACC × Capital Employed)<br><span>NOPAT = Net Operating Profit After Tax (adjusted)<br>WACC = Weighted Average Cost of Capital<br>Capital Employed = adjusted (see below)</span></div>
+          <p class="body"><strong>The Key Adjustments (EVA adjusts accounting figures):</strong></p>
+          <ul class="styled">
+            <li>Add back R&D (treat as investment, not expense)</li>
+            <li>Add back goodwill amortisation</li>
+            <li>Adjust for operating leases (capitalise them)</li>
+            <li>Use economic depreciation not accounting depreciation</li>
+            <li>Adjust for non-cash charges</li>
+          </ul>
+          <div class="callout callout-gold"><strong>⭐ Why EVA Is Better:</strong> Traditional accounting profit can be MANIPULATED (defer expenses, accelerate revenue). EVA's adjustments strip these out to show TRUE economic performance. Positive EVA = genuinely creating shareholder value.</div>
+          <div class="callout callout-trap"><strong>⚠️ EVA Exam Trap:</strong> Students confuse EVA and RI. They look similar but EVA uses WACC (a market rate), adjusts for accounting distortions, and uses adjusted capital. RI typically uses a simpler cost of capital with unadjusted figures.</div>
+          <div class="info-grid">
+            <div class="info-card"><h5 style="color:var(--accent3)">✅ EVA Advantages</h5><ul><li>Aligns with shareholder value maximisation</li><li>Reduces accounting manipulation incentives</li><li>Considers true cost of all capital (debt + equity)</li><li>Long-term focus (economic, not just accounting)</li></ul></div>
+            <div class="info-card"><h5 style="color:var(--accent5)">❌ EVA Disadvantages</h5><ul><li>Complex to calculate — many adjustments</li><li>Managers may not understand it</li><li>WACC estimation is subjective</li><li>Still based on historical costs ultimately</li><li>Short divisions may show negative EVA unfairly</li></ul></div>
+          </div>
+        </div>
+        <div class="tab-panel" id="div-compare">
+          <table class="tbl">
+            <thead><tr><th>Feature</th><th>ROI</th><th>RI</th><th>EVA</th></tr></thead>
+            <tbody>
+              <tr><td>Goal Congruence</td><td style="color:var(--accent5)">Poor ❌</td><td style="color:var(--accent3)">Good ✓</td><td style="color:var(--accent3)">Good ✓</td></tr>
+              <tr><td>Comparable Between Divisions</td><td style="color:var(--accent3)">Yes ✓</td><td style="color:var(--accent5)">No ❌</td><td style="color:var(--accent5)">No ❌</td></tr>
+              <tr><td>Accounting Adjustments</td><td style="color:var(--accent5)">None</td><td style="color:var(--accent5)">None</td><td style="color:var(--accent3)">Many adjustments</td></tr>
+              <tr><td>Complexity</td><td style="color:var(--accent3)">Simple</td><td style="color:var(--accent)">Moderate</td><td style="color:var(--accent5)">Complex</td></tr>
+              <tr><td>Short-termism Risk</td><td style="color:var(--accent5)">High ❌</td><td style="color:var(--accent)">Medium</td><td style="color:var(--accent3)">Lower ✓</td></tr>
+              <tr><td>ACCA Test Frequency</td><td style="color:var(--gold)">Very High</td><td style="color:var(--gold)">Very High</td><td style="color:var(--gold)">Very High</td></tr>
+            </tbody>
+          </table>
+          <div class="callout callout-exam"><strong>📋 Classic ACCA Question:</strong> "Calculate ROI, RI, and EVA for each division. Comment on the performance of each division and discuss which measure is most appropriate." — Practice these calculations until they're automatic. Then practise the EVALUATION.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ SECTION 4: TRANSFER PRICING -->
+<div class="section" id="s4">
+  <div class="section-header">
+    <div class="section-num">04</div>
+    <h2>Transfer Pricing</h2>
+  </div>
+  <p class="section-desc">When one division sells goods/services to another division within the same company, what price should they charge? This is one of the most complex and frequently tested areas of APM.</p>
+
+  <div class="acc" data-tags="transfer pricing divisional goal congruence market based cost plus negotiated international tax">
+    <div class="acc-head" onclick="toggleAcc(this)">
+      <div class="acc-icon" style="background:rgba(247,95,95,.1);color:var(--accent5)">🔄</div>
+      <h3>Transfer Pricing — Complete Guide</h3>
+      <div class="acc-meta">
+        <span class="badge badge-hot">🔥 VERY HOT</span>
+        <span class="badge badge-calc">CALC</span>
+      </div>
+      <svg class="acc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="acc-body">
+      <div class="tabs">
+        <div class="tab-nav">
+          <button class="tab-btn active" onclick="switchTab(this,'tp-basics')">The Problem</button>
+          <button class="tab-btn" onclick="switchTab(this,'tp-methods')">Methods</button>
+          <button class="tab-btn" onclick="switchTab(this,'tp-formula')">Formula</button>
+          <button class="tab-btn" onclick="switchTab(this,'tp-exam')">ACCA Exam</button>
+          <button class="tab-btn" onclick="switchTab(this,'tp-intl')">International</button>
+        </div>
+        <div class="tab-panel active" id="tp-basics">
+          <p class="body"><strong>The Core Problem:</strong> When Division A sells to Division B within the same company, the price charged is a COST to B and REVENUE to A. The transfer price affects each division's profit — and therefore their performance metrics, manager bonuses, and behaviour.</p>
+          <p class="body"><strong>Goal Congruence Challenge:</strong> What's good for Division A (high price) may be bad for Division B (high cost) — and vice versa. A poor transfer pricing system creates conflicts and dysfunctional behaviour.</p>
+          <div class="callout callout-gold"><strong>⭐ The Ideal Transfer Price:</strong> Goal congruent — motivates managers to act in the COMPANY'S best interest, not just their own division's interest.</div>
+          <div class="dtree">
+            <div class="dt-node q">Is there a perfect external market for the transferred product?</div>
+            <div class="dt-indent">
+              <div class="dt-node dt-yes">YES → Transfer at MARKET PRICE (most goal-congruent when competitive market exists)</div>
+              <div class="dt-node dt-no">NO (or market is imperfect) → Must use alternative method</div>
+              <div class="dt-indent">
+                <div class="dt-node q">Is the supplying division at full capacity?</div>
+                <div class="dt-indent">
+                  <div class="dt-node dt-yes">YES → TP = Marginal Cost + Opportunity Cost (lost contribution)</div>
+                  <div class="dt-node dt-no">NO (spare capacity) → TP = Marginal Cost (minimum; negotiation upward)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-panel" id="tp-methods">
+          <table class="tbl">
+            <thead><tr><th>Method</th><th>What It Is</th><th>Best When</th><th>Problem</th></tr></thead>
+            <tbody>
+              <tr><td>Market Price</td><td>Charge the external market price</td><td>Perfect competitive market exists; division could trade externally</td><td>May not exist; may give supplier all profit</td></tr>
+              <tr><td>Marginal Cost</td><td>Variable cost of production</td><td>Supplying division has spare capacity</td><td>Supplying division makes no profit → demotivating</td></tr>
+              <tr><td>Full Cost</td><td>Total cost per unit (including fixed)</td><td>Simple; easy to understand</td><td>Includes fixed cost allocation — arbitrary; no profit for supplier</td></tr>
+              <tr><td>Full Cost Plus</td><td>Total cost + profit margin</td><td>Common in practice</td><td>Inefficiencies passed on to buyer; margin is arbitrary</td></tr>
+              <tr><td>Negotiated</td><td>Divisions negotiate a price between themselves</td><td>When no external market; divisions have some autonomy</td><td>Time-consuming; depends on negotiating power; may cause conflict</td></tr>
+              <tr><td>Two-Part Tariff</td><td>Fixed charge + variable rate per unit</td><td>Complex interdependencies; to allow marginal cost pricing while recovering fixed costs</td><td>Complex; requires agreement on fixed charge</td></tr>
+              <tr><td>Dual Pricing</td><td>Supplier gets market price; buyer pays marginal cost (company absorbs difference)</td><td>Where goal congruence is paramount and head office willing to subsidise</td><td>Distorts overall company profit figure</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tab-panel" id="tp-formula">
+          <p class="body"><strong>The ACCA Standard Formula for Minimum Transfer Price:</strong></p>
+          <div class="formula">Minimum Transfer Price = Marginal Cost + Opportunity Cost<br><span><br>Where Opportunity Cost = Lost contribution per unit from giving up external sales<br><br>If supplying division has SPARE CAPACITY:<br>Minimum TP = Marginal Cost + 0 = Marginal Cost only<br><br>If supplying division is AT FULL CAPACITY:<br>Minimum TP = Marginal Cost + (External Price − Marginal Cost)<br>            = External Market Price</span></div>
+          <div class="example-box">
+            <div class="ex-label">Worked Example</div>
+            <p style="font-size:.82rem;color:var(--text2);line-height:1.8">Division A makes components. Marginal cost = £10. External selling price = £16.<br>Division A has spare capacity for 500 units. Division B wants 300 units.<br><br><strong>Case 1 – Spare capacity (no opportunity cost):</strong><br>Min TP = £10 + £0 = <strong>£10 per unit</strong><br><br><strong>Case 2 – No spare capacity (must give up external sales):</strong><br>Min TP = £10 + (£16 − £10) = £10 + £6 = <strong>£16 per unit</strong><br><br>Maximum TP (from buyer's perspective) = whatever price the buyer can obtain externally.<br>If Division B can buy externally for £14 → Max TP = £14<br><br>In Case 2: Min TP (£16) > Max TP (£14) → NO DEAL IS POSSIBLE → suboptimal for the company overall</p>
+          </div>
+        </div>
+        <div class="tab-panel" id="tp-exam">
+          <div class="callout callout-exam"><strong>📋 ACCA Tests Transfer Pricing As:</strong><br>1. Calculate minimum/maximum transfer price<br>2. "Discuss whether the current transfer pricing policy promotes goal congruence"<br>3. "Advise on a suitable transfer pricing policy for [Company X]"<br>4. "Explain the behavioural implications of the current transfer price on divisional managers"</div>
+          <div class="answer-box">
+            <div class="ans-label">✍️ 10-Mark Discussion Framework</div>
+            <p style="font-size:.82rem;color:var(--text2);line-height:1.7">
+            <strong>Para 1 — Current situation:</strong> Identify the current transfer price and method used from the scenario.<br><br>
+            <strong>Para 2 — Goal congruence test:</strong> Does the current TP lead to decisions that are good for the company overall? Calculate optimal decision from company perspective vs divisional manager's perspective. Show the conflict if it exists.<br><br>
+            <strong>Para 3 — Behavioural implications:</strong> What will managers actually DO under this system? (Game the system, reject profitable trades, over/under-price to hit targets?)<br><br>
+            <strong>Para 4 — Recommendation:</strong> Suggest alternative TP method with justification. Acknowledge any remaining limitations.<br><br>
+            <strong>Para 5 — Additional considerations:</strong> Tax implications (see International tab), autonomy vs control, negotiation practicalities.
+            </p>
+          </div>
+          <div class="callout callout-trap"><strong>⚠️ Top Exam Traps:</strong><br>1. Forgetting to consider opportunity cost when at full capacity<br>2. Not linking TP to divisional performance metrics (ROI/RI/EVA)<br>3. Ignoring the international tax dimension when the scenario mentions multiple countries<br>4. Recommending market price when no external market exists in the scenario</div>
+        </div>
+        <div class="tab-panel" id="tp-intl">
+          <p class="body"><strong>International Transfer Pricing:</strong> When divisions are in different countries, the transfer price affects WHERE profit is reported — and therefore how much TAX the group pays.</p>
+          <div class="callout callout-warn"><strong>⚠️ Tax Motivation Issue:</strong> Companies may manipulate transfer prices to shift profits to low-tax jurisdictions (tax havens). This is ILLEGAL in most countries and violates the "arm's length principle."</div>
+          <p class="body"><strong>The Arm's Length Principle:</strong> Transfer prices should be set at the price that unrelated third parties would charge in similar circumstances. This is the OECD standard and is tested in APM.</p>
+          <div class="info-grid">
+            <div class="info-card"><h5>Tax Motivation</h5><ul><li>Charge HIGH price to low-tax country (more cost, less profit there)</li><li>Charge LOW price FROM low-tax country (more profit stays there)</li><li>HMRC/tax authorities challenge these manipulations</li><li>Advance Pricing Agreements (APA) available</li></ul></div>
+            <div class="info-card"><h5>APM Exam Implications</h5><ul><li>Discuss tension between tax minimisation and goal congruence</li><li>Explain regulatory constraints (arm's length)</li><li>Note impact on divisional performance measures</li><li>Consider currency risk in international TP</li></ul></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ SECTION 5: QUALITY & OPERATIONAL -->
+<div class="section" id="s5">
+  <div class="section-header">
+    <div class="section-num">05</div>
+    <h2>Quality & Operational Management</h2>
+  </div>
+  <p class="section-desc">Quality management models explain how to achieve operational excellence. In APM, these link directly to performance measurement — because you need KPIs to track quality improvement.</p>
+
+  <div class="acc" data-tags="tqm total quality management kaizen lean six sigma jit just in time continuous improvement quality cost">
+    <div class="acc-head" onclick="toggleAcc(this)">
+      <div class="acc-icon" style="background:rgba(0,212,170,.1);color:var(--accent3)">🎖️</div>
+      <h3>TQM, Kaizen, Lean & Six Sigma</h3>
+      <div class="acc-meta">
+        <span class="badge badge-hot">HOT</span>
+        <div class="difficulty"><div class="d-dot on"></div><div class="d-dot on"></div><div class="d-dot"></div></div>
+      </div>
+      <svg class="acc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="acc-body">
+      <div class="tabs">
+        <div class="tab-nav">
+          <button class="tab-btn active" onclick="switchTab(this,'q-tqm')">TQM</button>
+          <button class="tab-btn" onclick="switchTab(this,'q-kaizen')">Kaizen</button>
+          <button class="tab-btn" onclick="switchTab(this,'q-lean')">Lean</button>
+          <button class="tab-btn" onclick="switchTab(this,'q-6sigma')">Six Sigma</button>
+          <button class="tab-btn" onclick="switchTab(this,'q-jit')">JIT</button>
+          <button class="tab-btn" onclick="switchTab(this,'q-cost')">Cost of Quality</button>
+        </div>
+        <div class="tab-panel active" id="q-tqm">
+          <p class="body"><strong>TQM (Total Quality Management):</strong> A philosophy, not just a technique. The idea is that quality is EVERYONE'S responsibility, all the time — not just the quality control department's job at the end of production.</p>
+          <ul class="styled">
+            <li><strong>Zero defects goal</strong> — aim for perfection, not acceptable defect rates</li>
+            <li><strong>Customer focus</strong> — quality means meeting customer requirements, not internal standards</li>
+            <li><strong>Prevention over inspection</strong> — fix the process, don't just catch defects after</li>
+            <li><strong>Continuous improvement</strong> — always improving, never "good enough"</li>
+            <li><strong>Employee involvement</strong> — front-line workers identify quality problems best</li>
+          </ul>
+          <div class="callout callout-exam"><strong>📋 ACCA Tests TQM As:</strong> "Discuss how TQM could improve [Company X]'s performance" or "Evaluate the suitability of [Company X]'s current approach to quality management." Link TQM principles to the specific operational problems in the scenario.</div>
+          <div class="callout callout-trap"><strong>⚠️ Limitation:</strong> TQM requires cultural change — it can't be imposed top-down. If management don't genuinely commit, it becomes box-ticking. Implementation cost can be high. Results take time.</div>
+        </div>
+        <div class="tab-panel" id="q-kaizen">
+          <p class="body"><strong>Kaizen (改善):</strong> Japanese for "continuous improvement." Small, incremental improvements made continuously by all employees. The opposite of "big bang" transformations.</p>
+          <div class="example-box">
+            <div class="ex-label">Kaizen in Practice</div>
+            <p style="font-size:.82rem;color:var(--text2)">A factory worker notices that picking up a tool takes 3 extra seconds. They suggest moving the tool holder closer. Saves 3 seconds × 200 operations × 250 working days = 250 hours per year saved per worker. Scaled across 50 workers = 12,500 hours. This IS Kaizen — small idea, big cumulative impact.</p>
+          </div>
+          <p class="body"><strong>Kaizen Costing:</strong> Setting cost reduction targets each period. Managers must achieve a specified cost reduction from current costs — not just maintain current costs. Forces continuous efficiency improvement.</p>
+          <div class="callout callout-exam"><strong>📋 ACCA Tests Kaizen as:</strong> Contrast with standard costing (which maintains current standards) — Kaizen CHALLENGES the standard every period. Link to target costing (cost reduction to reach target). Discuss behavioural implications (pressure, stress, gaming).</div>
+        </div>
+        <div class="tab-panel" id="q-lean">
+          <p class="body"><strong>Lean:</strong> Eliminate ALL waste. Waste (called "muda" in Japanese) is anything that doesn't add value for the customer.</p>
+          <div class="info-grid">
+            <div class="info-card"><h5>7 Types of Waste (TIMWOOD)</h5><ul>
+              <li><strong>T</strong>ransport — unnecessary movement</li>
+              <li><strong>I</strong>nventory — excess stock</li>
+              <li><strong>M</strong>otion — wasted movement</li>
+              <li><strong>W</strong>aiting — delays in process</li>
+              <li><strong>O</strong>verproduction — making more than needed</li>
+              <li><strong>O</strong>verprocessing — doing more than required</li>
+              <li><strong>D</strong>efects — rework and quality failures</li>
+            </ul></div>
+            <div class="info-card"><h5>Lean KPIs</h5><ul>
+              <li>Value-added ratio (VA time / Total time)</li>
+              <li>Inventory turnover days</li>
+              <li>Process cycle time</li>
+              <li>First-pass yield rate</li>
+              <li>Overall Equipment Effectiveness</li>
+              <li>Lead time from order to delivery</li>
+            </ul></div>
+          </div>
+          <div class="callout callout-trap"><strong>⚠️ Lean Limitation:</strong> Reducing inventory to zero creates supply chain vulnerability (as COVID-19 demonstrated). Lean requires reliable supplier relationships. Not suitable for all businesses (e.g., high variability demand).</div>
+        </div>
+        <div class="tab-panel" id="q-6sigma">
+          <p class="body"><strong>Six Sigma:</strong> A data-driven approach to eliminating defects. "Six sigma" means achieving fewer than 3.4 defects per million opportunities — essentially perfection.</p>
+          <div class="formula">DMAIC Framework:<br>D — Define the problem and customer requirements<br>M — Measure current process performance<br>A — Analyse root causes of defects<br>I — Improve the process (implement solutions)<br>C — Control to sustain improvements</div>
+          <div class="callout callout-exam"><strong>📋 ACCA tests Six Sigma as:</strong> Understanding DMAIC methodology, linking to quality KPIs, discussing when it's appropriate (high-volume, repetitive processes), contrasting with TQM (Six Sigma is more statistical/structured; TQM is more cultural/philosophy).</div>
+        </div>
+        <div class="tab-panel" id="q-jit">
+          <p class="body"><strong>JIT (Just-In-Time):</strong> Receive materials and produce products exactly when needed — zero inventory buffer. Linked to Lean thinking.</p>
+          <div class="info-grid">
+            <div class="info-card"><h5 style="color:var(--accent3)">JIT Benefits</h5><ul><li>Zero/minimal inventory holding costs</li><li>Reduces warehouse space needs</li><li>Forces quality (no buffer to hide defects)</li><li>Improves cash flow</li><li>Reduces obsolescence risk</li></ul></div>
+            <div class="info-card"><h5 style="color:var(--accent5)">JIT Risks</h5><ul><li>Supply disruption = production stop</li><li>Requires perfect supplier reliability</li><li>No buffer for demand spikes</li><li>Difficult with long lead time suppliers</li><li>Geographic concentration risk</li></ul></div>
+          </div>
+        </div>
+        <div class="tab-panel" id="q-cost">
+          <p class="body"><strong>Cost of Quality:</strong> Quality isn't free — but neither is POOR quality. Companies spend money in four ways related to quality.</p>
+          <table class="tbl">
+            <thead><tr><th>Category</th><th>What It Means</th><th>Examples</th><th>Type</th></tr></thead>
+            <tbody>
+              <tr><td>Prevention</td><td>Stopping defects happening</td><td>Training, quality design, process improvement</td><td style="color:var(--accent3)">Proactive ✓</td></tr>
+              <tr><td>Appraisal</td><td>Testing/inspecting to find defects</td><td>Quality testing, inspection, sampling</td><td style="color:var(--accent)">Detection</td></tr>
+              <tr><td>Internal Failure</td><td>Defects found BEFORE reaching customer</td><td>Rework, scrap, re-inspection costs</td><td style="color:var(--accent5)">Reactive ❌</td></tr>
+              <tr><td>External Failure</td><td>Defects found AFTER reaching customer</td><td>Warranties, returns, recalls, reputation damage</td><td style="color:var(--accent5)">Most costly ❌❌</td></tr>
+            </tbody>
+          </table>
+          <div class="callout callout-gold"><strong>⭐ Key Insight:</strong> Invest more in Prevention → reduces Appraisal, Internal Failure, and External Failure costs. The total cost of quality DECREASES by spending more on prevention. This is counterintuitive — spending more saves money.</div>
+          <div class="callout callout-exam"><strong>📋 ACCA Tests This As:</strong> "Classify the following costs and calculate total cost of quality" OR "Discuss how [Company X] could use cost of quality information to improve performance." Classify costs into the four categories → calculate → recommend shifting spending toward prevention.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BENCHMARKING -->
+  <div class="acc" data-tags="benchmarking internal competitive functional process best practice">
+    <div class="acc-head" onclick="toggleAcc(this)">
+      <div class="acc-icon" style="background:rgba(79,142,247,.1);color:var(--accent)">📏</div>
+      <h3>Benchmarking</h3>
+      <div class="acc-meta">
+        <span class="badge badge-core">CORE</span>
+      </div>
+      <svg class="acc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="acc-body">
+      <p class="body"><strong>What it is:</strong> Comparing your performance against others to identify improvement opportunities. There are four types — ACCA tests your ability to choose the RIGHT one and discuss its limitations.</p>
+      <table class="tbl">
+        <thead><tr><th>Type</th><th>Compare Against</th><th>Best For</th><th>Limitation</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Internal</strong></td><td>Other departments/divisions within the same company</td><td>Large organisations; identifying internal best practice</td><td>No external perspective; can entrench mediocrity</td></tr>
+          <tr><td><strong>Competitive</strong></td><td>Direct competitors in the same industry</td><td>Understanding competitive position</td><td>Hard to get competitors' data; only compares with known competitors</td></tr>
+          <tr><td><strong>Functional</strong></td><td>Companies in different industries with similar functions (e.g., logistics, HR)</td><td>Finding world-class processes from unexpected sources</td><td>Different contexts may make comparison inappropriate</td></tr>
+          <tr><td><strong>Process (Best-in-class)</strong></td><td>Best performer of a specific process anywhere in the world</td><td>Step-change improvement ambitions</td><td>Most difficult to implement; requires significant research</td></tr>
+        </tbody>
+      </table>
+      <div class="callout callout-trap"><strong>⚠️ Benchmarking Traps in APM:</strong><br>1. Benchmarking against the WRONG standard (e.g., internal when competitor data exists)<br>2. Treating benchmarking as a target-setting exercise without understanding WHY competitors perform better<br>3. Copying benchmark metrics without adapting to your own context<br>4. Benchmarking historical data that may be outdated</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ SECTION 6: BUDGETING -->
+<div class="section" id="s6">
+  <div class="section-header">
+    <div class="section-num">06</div>
+    <h2>Budgeting & Control</h2>
+  </div>
+
+  <div class="acc" data-tags="beyond budgeting rolling budget ABB activity based budgeting ZBB zero based budgeting">
+    <div class="acc-head" onclick="toggleAcc(this)">
+      <div class="acc-icon" style="background:rgba(245,200,66,.1);color:var(--gold)">📅</div>
+      <h3>Beyond Budgeting, Rolling Budgets, ABB & ZBB</h3>
+      <div class="acc-meta">
+        <span class="badge badge-hot">HOT</span>
+      </div>
+      <svg class="acc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="acc-body">
+      <div class="tabs">
+        <div class="tab-nav">
+          <button class="tab-btn active" onclick="switchTab(this,'b-beyond')">Beyond Budgeting</button>
+          <button class="tab-btn" onclick="switchTab(this,'b-rolling')">Rolling Budgets</button>
+          <button class="tab-btn" onclick="switchTab(this,'b-abb')">ABB</button>
+          <button class="tab-btn" onclick="switchTab(this,'b-zbb')">ZBB</button>
+        </div>
+        <div class="tab-panel active" id="b-beyond">
+          <p class="body"><strong>The Problem with Traditional Budgeting:</strong> Annual budgets take months to prepare, are outdated by the time they're done, encourage gaming (spending budgets to keep them next year), create departmental silos, and promote short-termism.</p>
+          <p class="body"><strong>Beyond Budgeting (Hope & Fraser):</strong> Abandon the traditional annual budget entirely. Instead, use relative performance targets, rolling forecasts, decentralised decision-making, and continuous planning.</p>
+          <div class="info-grid">
+            <div class="info-card"><h5>Key Principles</h5><ul>
+              <li>Targets based on external benchmarks (not internal budget)</li>
+              <li>Rewards based on relative improvement (vs prior year, vs competitors)</li>
+              <li>Rolling forecasts updated regularly</li>
+              <li>Decentralised decision-making to front-line managers</li>
+              <li>Resources allocated dynamically, not pre-committed</li>
+            </ul></div>
+            <div class="info-card"><h5>Works Best For…</h5><ul>
+              <li>Fast-moving industries (tech, retail)</li>
+              <li>Organisations needing agility and innovation</li>
+              <li>Mature organisations wanting to reduce bureaucracy</li>
+              <li>Examples: Handelsbanken (Swedish bank) — famous case study</li>
+            </ul></div>
+          </div>
+          <div class="callout callout-trap"><strong>⚠️ Limitations:</strong> Hard to implement — requires massive cultural change. Not suitable for all organisations (e.g., government, regulated industries need predictable budgets). Managers may lack skills for decentralised decision-making. Coordination challenges across departments.</div>
+          <div class="callout callout-exam"><strong>📋 ACCA Tests This As:</strong> "Discuss whether [Company X] should adopt a 'beyond budgeting' approach" — Identify the problems with current budgeting in the scenario → explain beyond budgeting principles → evaluate suitability for THIS company → conclude with balanced recommendation.</div>
+        </div>
+        <div class="tab-panel" id="b-rolling">
+          <p class="body"><strong>Rolling Budgets:</strong> Instead of one annual budget, continuously update forecasts. E.g., always have a 12-month budget — every month, drop the past month and add a new future month.</p>
+          <div class="info-grid">
+            <div class="info-card"><h5 style="color:var(--accent3)">✅ Advantages</h5><ul><li>Always current — reflects latest information</li><li>Reduces gaming of annual budget</li><li>Forces regular management review</li><li>More realistic targets in volatile environments</li></ul></div>
+            <div class="info-card"><h5 style="color:var(--accent5)">❌ Disadvantages</h5><ul><li>More expensive and time-consuming to maintain</li><li>Risk of management spending too much time on budgeting</li><li>Targets always changing → demotivating?</li><li>Requires good forecasting skills and data</li></ul></div>
+          </div>
+        </div>
+        <div class="tab-panel" id="b-abb">
+          <p class="body"><strong>Activity Based Budgeting (ABB):</strong> Uses ABC principles to build budgets. Instead of budgeting by department, budget by activity drivers. "How many setups? How many purchase orders? How many inspections?" Then budget for the cost of those activities.</p>
+          <div class="callout callout-tip"><strong>💡 ABB Insight:</strong> Helps identify which activities are genuinely value-adding and which are unnecessary overhead. Links directly to ABC costing — if you use ABC for costing, ABB for budgeting is a natural complement.</div>
+          <div class="callout callout-exam"><strong>📋 ACCA uses ABB in:</strong> Questions about overhead cost management, activity cost analysis, and budgeting reform in organisations already using ABC.</div>
+        </div>
+        <div class="tab-panel" id="b-zbb">
+          <p class="body"><strong>Zero Based Budgeting (ZBB):</strong> Start every budget from zero — every activity must be justified each period. No "add 5% to last year's budget." You must PROVE each cost is still needed.</p>
+          <div class="info-grid">
+            <div class="info-card"><h5 style="color:var(--accent3)">✅ Advantages</h5><ul><li>Eliminates historic cost creep and budget padding</li><li>Forces managers to justify all spending</li><li>Allocates resources to where genuinely needed</li><li>Excellent for service/overhead departments</li></ul></div>
+            <div class="info-card"><h5 style="color:var(--accent5)">❌ Disadvantages</h5><ul><li>Very time-consuming — massive workload</li><li>May demotivate managers (constant justification)</li><li>Difficult for long-term investments that span years</li><li>Gaming — managers learn to "justify" existing budgets</li></ul></div>
+          </div>
+          <div class="callout callout-exam"><strong>📋 ZBB is especially suited for:</strong> Public sector (government departments must justify spending), shared service centres, discretionary spend areas, overhead-heavy organisations. ACCA often tests ZBB in NFP/public sector contexts.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ SECTION 7: COST MANAGEMENT -->
+<div class="section" id="s7">
+  <div class="section-header">
+    <div class="section-num">07</div>
+    <h2>Strategic Cost Management</h2>
+  </div>
+
+  <div class="acc" data-tags="ABC activity based costing target costing lifecycle costing throughput accounting theory of constraints">
+    <div class="acc-head" onclick="toggleAcc(this)">
+      <div class="acc-icon" style="background:rgba(124,92,252,.1);color:var(--accent2)">💰</div>
+      <h3>ABC, Target Costing, Lifecycle & Throughput</h3>
+      <div class="acc-meta">
+        <span class="badge badge-hot">HOT</span>
+        <span class="badge badge-calc">CALC</span>
+      </div>
+      <svg class="acc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="acc-body">
+      <div class="tabs">
+        <div class="tab-nav">
+          <button class="tab-btn active" onclick="switchTab(this,'c-abc')">ABC</button>
+          <button class="tab-btn" onclick="switchTab(this,'c-target')">Target Costing</button>
+          <button class="tab-btn" onclick="switchTab(this,'c-lifecycle')">Lifecycle</button>
+          <button class="tab-btn" onclick="switchTab(this,'c-throughput')">Throughput</button>
+        </div>
+        <div class="tab-panel active" id="c-abc">
+          <p class="body"><strong>ABC (Activity Based Costing):</strong> Traditional absorption costing allocates overheads arbitrarily (usually by labour hours). ABC traces overheads to the activities that CAUSE those costs — giving a more accurate product cost.</p>
+          <div class="formula">ABC Steps:<br>1. Identify activities (e.g., setups, inspections, purchase orders)<br>2. Identify cost drivers for each activity<br>3. Calculate activity cost rate = Activity cost ÷ Cost driver volume<br>4. Assign costs to products based on their consumption of activities</div>
+          <div class="example-box">
+            <div class="ex-label">ABC vs Traditional: Why It Matters</div>
+            <p style="font-size:.82rem;color:var(--text2);line-height:1.7">Traditional costing: Product A (high-volume) and Product B (low-volume, complex) both allocated £50 overhead per labour hour.<br><br>ABC reality: Product B requires 10× more setups, 5× more inspections, 4× more purchase orders. ABC shows Product B's TRUE cost is much higher than traditional costing suggests.<br><br>Result: Company may be unknowingly SUBSIDISING Product B with profits from Product A. Wrong pricing decisions. ABC reveals this.</p>
+          </div>
+          <div class="callout callout-exam"><strong>📋 ACCA Tests ABC As:</strong><br>1. Calculate cost per unit under ABC vs traditional (spot the difference)<br>2. "Discuss the advantages of adopting ABC for [Company X]"<br>3. "Evaluate customer/product profitability using ABC data"</div>
+          <div class="callout callout-trap"><strong>⚠️ ABC Doesn't Work When:</strong> Overheads are small relative to total costs, products use activities in similar proportions, or the cost of implementing ABC exceeds the decision-making benefit.</div>
+        </div>
+        <div class="tab-panel" id="c-target">
+          <p class="body"><strong>Target Costing:</strong> Market-driven approach. Start with the price customers will pay, subtract desired profit, and the result is your COST TARGET. Then engineer the product to meet that cost.</p>
+          <div class="formula">Target Cost = Market Price − Desired Profit Margin<br><span><br>If Current Cost > Target Cost → Cost Gap exists<br>Cost Gap must be closed through value engineering, supplier negotiation, or process improvement</span></div>
+          <p class="body"><strong>Key Concept — Value Engineering:</strong> Systematically review each component of a product to find cheaper alternatives WITHOUT reducing perceived value to the customer. "What does this feature cost? What value does it add? Is there a cheaper way to deliver the same value?"</p>
+          <div class="info-grid">
+            <div class="info-card"><h5 style="color:var(--accent3)">✅ Target Costing Suits</h5><ul><li>Competitive markets (price-takers)</li><li>Products with defined market prices</li><li>New product development stage</li><li>Consumer electronics, automotive industry</li></ul></div>
+            <div class="info-card"><h5 style="color:var(--accent5)">❌ Not Suitable When</h5><ul><li>Company is a price-setter (luxury goods, monopoly)</li><li>Unique/customised products (no market price)</li><li>Production already established (too late)</li></ul></div>
+          </div>
+          <div class="callout callout-exam"><strong>📋 ACCA Tests This As:</strong> Calculate target cost → calculate cost gap → suggest ways to close the gap (value engineering, supplier renegotiation, process redesign, design simplification) → discuss challenges of closing the gap.</div>
+        </div>
+        <div class="tab-panel" id="c-lifecycle">
+          <p class="body"><strong>Lifecycle Costing:</strong> Consider ALL costs over a product's entire life — not just production costs. Include: development, launch, growth, maturity, decline, and disposal/decommissioning.</p>
+          <div class="callout callout-gold"><strong>⭐ Key Insight:</strong> 70–80% of a product's total lifetime costs are COMMITTED at the design stage — even though they're incurred later. This means cost management must happen EARLY, not just during production.</div>
+          <p class="body"><strong>Lifecycle stages and cost focus:</strong></p>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0">
+            <div style="background:rgba(79,142,247,.06);border:1px solid rgba(79,142,247,.2);border-radius:8px;padding:10px;font-size:.75rem"><div style="color:var(--accent);font-weight:700;margin-bottom:4px">R&D/Design</div><div style="color:var(--text2)">Highest cost commitment. Focus: Get design right. Commit as few costs as possible.</div></div>
+            <div style="background:rgba(0,212,170,.06);border:1px solid rgba(0,212,170,.2);border-radius:8px;padding:10px;font-size:.75rem"><div style="color:var(--accent3);font-weight:700;margin-bottom:4px">Launch/Growth</div><div style="color:var(--text2)">High marketing costs. Focus: Build market share. Recover investment.</div></div>
+            <div style="background:rgba(245,200,66,.06);border:1px solid rgba(245,200,66,.2);border-radius:8px;padding:10px;font-size:.75rem"><div style="color:var(--gold);font-weight:700;margin-bottom:4px">Maturity/Decline</div><div style="color:var(--text2)">Cost management. Focus: Maximise cash generation. Plan disposal costs.</div></div>
+          </div>
+          <div class="callout callout-exam"><strong>📋 ACCA Tests Lifecycle Costing As:</strong> "Why should [Company X] adopt lifecycle costing?" and "Calculate total lifecycle cost and recommend a pricing strategy over the product's life." Also appears in target costing questions — you need lifecycle cost to set the right target.</div>
+        </div>
+        <div class="tab-panel" id="c-throughput">
+          <p class="body"><strong>Throughput Accounting (Goldratt's Theory of Constraints):</strong> Every system has a bottleneck — the CONSTRAINT that limits total output. The only way to improve performance is to manage the constraint.</p>
+          <div class="formula">Throughput = Sales Revenue − Direct Materials Cost<br><span>(Labour and overheads are treated as FIXED in the short term)<br><br>Return per Factory Hour = Throughput ÷ Time on Bottleneck Resource<br><br>Throughput Accounting Ratio (TPAR) = Return per Factory Hour ÷ Cost per Factory Hour<br><br>TPAR > 1 = Worth producing ✓</span></div>
+          <div class="callout callout-gold"><strong>⭐ Theory of Constraints (5 Steps):</strong><br>1. IDENTIFY the constraint<br>2. EXPLOIT the constraint (maximise throughput through it)<br>3. SUBORDINATE everything else to support the constraint<br>4. ELEVATE the constraint (invest to increase capacity)<br>5. RETURN to step 1 (new constraint will emerge)</div>
+          <div class="callout callout-trap"><strong>⚠️ Exam Trap:</strong> Throughput treats ALL costs except direct materials as fixed. Students panic because it seems wrong that labour is "fixed." In the SHORT TERM this is correct — you can't immediately reduce labour even if you produce less. Throughput maximises use of CONSTRAINED resources.</div>
+          <div class="callout callout-exam"><strong>📋 ACCA Tests Throughput As:</strong> Calculate TPAR for multiple products → rank by TPAR → determine optimal production plan subject to bottleneck → discuss whether to elevate the constraint.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ SECTION 8: DIGITAL -->
+<div class="section" id="s8">
+  <div class="section-header">
+    <div class="section-num">08</div>
+    <h2>Data Analytics & Digital Performance</h2>
+  </div>
+
+  <div class="acc" data-tags="big data analytics AI artificial intelligence dashboard predictive analytics cybersecurity digital performance">
+    <div class="acc-head" onclick="toggleAcc(this)">
+      <div class="acc-icon" style="background:rgba(79,142,247,.1);color:var(--accent)">🤖</div>
+      <h3>Big Data, AI & Digital Performance Management</h3>
+      <div class="acc-meta">
+        <span class="badge badge-new">EMERGING</span>
+        <span class="badge badge-hot">HOT</span>
+      </div>
+      <svg class="acc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="acc-body">
+      <div class="tabs">
+        <div class="tab-nav">
+          <button class="tab-btn active" onclick="switchTab(this,'d-bigdata')">Big Data</button>
+          <button class="tab-btn" onclick="switchTab(this,'d-analytics')">Analytics Types</button>
+          <button class="tab-btn" onclick="switchTab(this,'d-ai')">AI in PM</button>
+          <button class="tab-btn" onclick="switchTab(this,'d-cyber')">Cybersecurity</button>
+        </div>
+        <div class="tab-panel active" id="d-bigdata">
+          <p class="body"><strong>Big Data:</strong> Datasets so large and complex that traditional management information systems can't process them. Characterised by the 5 Vs:</p>
+          <div class="kpi-grid">
+            <div class="kpi-item"><div class="ki-val">Volume</div><div class="ki-lbl">Massive scale of data generated</div></div>
+            <div class="kpi-item"><div class="ki-val">Velocity</div><div class="ki-lbl">Speed data is created & processed</div></div>
+            <div class="kpi-item"><div class="ki-val">Variety</div><div class="ki-lbl">Structured + unstructured formats</div></div>
+            <div class="kpi-item"><div class="ki-val">Veracity</div><div class="ki-lbl">Quality and reliability of data</div></div>
+            <div class="kpi-item"><div class="ki-val">Value</div><div class="ki-lbl">Usefulness for decision-making</div></div>
+          </div>
+          <p class="body mt12"><strong>APM Implications of Big Data:</strong></p>
+          <ul class="styled">
+            <li>Real-time performance dashboards possible (vs monthly reports)</li>
+            <li>Predictive analytics — forecast performance before period ends</li>
+            <li>Deeper customer insight — personalised performance targets</li>
+            <li>Supply chain optimisation — real-time inventory and logistics data</li>
+            <li>Risk — data privacy, cybersecurity, data quality issues</li>
+          </ul>
+          <div class="callout callout-trap"><strong>⚠️ ACCA Caution:</strong> Big data creates risks — decisions based on poor quality data (Veracity issue) can be WORSE than no data. Data ethics and privacy (GDPR) must be considered in any performance management system.</div>
+        </div>
+        <div class="tab-panel" id="d-analytics">
+          <table class="tbl">
+            <thead><tr><th>Type</th><th>Question it Answers</th><th>Example</th><th>PM Value</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Descriptive</strong></td><td>What happened?</td><td>Monthly sales report, dashboard KPIs</td><td>Reports performance — backward-looking</td></tr>
+              <tr><td><strong>Diagnostic</strong></td><td>Why did it happen?</td><td>Variance analysis, root cause analysis</td><td>Explains performance gaps — understanding</td></tr>
+              <tr><td><strong>Predictive</strong></td><td>What will happen?</td><td>Sales forecast, churn prediction</td><td>Anticipates future performance — proactive</td></tr>
+              <tr><td><strong>Prescriptive</strong></td><td>What should we do?</td><td>AI-recommended pricing, route optimisation</td><td>Recommends actions — highest value</td></tr>
+            </tbody>
+          </table>
+          <div class="callout callout-exam"><strong>📋 ACCA Tests This As:</strong> "Evaluate how [Company X] could use data analytics to improve its performance management system" — Identify which type of analytics would address the specific problems in the scenario. Discuss benefits AND risks (data quality, cost, ethics).</div>
+        </div>
+        <div class="tab-panel" id="d-ai">
+          <p class="body"><strong>AI in Performance Management:</strong> AI and machine learning are transforming how companies measure and improve performance.</p>
+          <div class="info-grid">
+            <div class="info-card"><h5>AI Applications in PM</h5><ul>
+              <li>Automated real-time dashboards</li>
+              <li>Anomaly detection in financial data</li>
+              <li>Demand forecasting (predictive)</li>
+              <li>Customer sentiment analysis (social media)</li>
+              <li>Dynamic pricing optimisation</li>
+              <li>HR performance analytics</li>
+              <li>Supply chain optimisation</li>
+            </ul></div>
+            <div class="info-card"><h5>Risks & Limitations</h5><ul>
+              <li>Algorithmic bias — unfair outputs</li>
+              <li>"Black box" — managers don't understand decisions</li>
+              <li>Data privacy concerns</li>
+              <li>Over-reliance — humans still needed for judgment</li>
+              <li>High implementation cost</li>
+              <li>Cybersecurity risk of AI systems</li>
+              <li>Ethical concerns about employee monitoring</li>
+            </ul></div>
+          </div>
+          <div class="callout callout-exam"><strong>📋 ACCA Emerging Topic:</strong> Expect questions linking AI to performance measurement — "Discuss the opportunities and risks of using AI to generate [Company X]'s KPI dashboard" — Always balance benefits with risk/ethical considerations.</div>
+        </div>
+        <div class="tab-panel" id="d-cyber">
+          <p class="body"><strong>Cybersecurity Performance:</strong> As businesses become more digital, cybersecurity performance is itself a strategic KPI. A data breach can destroy customer trust, incur regulatory fines, and damage competitive position.</p>
+          <div class="kpi-grid">
+            <div class="kpi-item"><div class="ki-val">MTTR</div><div class="ki-lbl">Mean Time To Respond to threats</div></div>
+            <div class="kpi-item"><div class="ki-val">Incidents</div><div class="ki-lbl">Security breaches per quarter</div></div>
+            <div class="kpi-item"><div class="ki-val">Patch Rate</div><div class="ki-lbl">% systems security-patched on time</div></div>
+            <div class="kpi-item"><div class="ki-val">Training %</div><div class="ki-lbl">Staff completing cyber training</div></div>
+          </div>
+          <div class="callout callout-exam"><strong>📋 ACCA Link:</strong> Cybersecurity KPIs belong in Internal Process perspective of BSC. Also linked to ESG reporting — data governance and security are material ESG issues for technology-dependent companies.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ SECTION 9: BEHAVIOURAL -->
+<div class="section" id="s9">
+  <div class="section-header">
+    <div class="section-num">09</div>
+    <h2>Behavioural Aspects of Performance Management</h2>
+  </div>
+  <p class="section-desc">How people RESPOND to performance management systems matters as much as the systems themselves. ACCA loves testing the human side of performance management.</p>
+
+  <div class="acc" data-tags="agency theory motivation reward systems short termism gaming budgetary slack dysfunctional behaviour">
+    <div class="acc-head" onclick="toggleAcc(this)">
+      <div class="acc-icon" style="background:rgba(247,95,95,.1);color:var(--accent5)">🧠</div>
+      <h3>Agency Theory, Gaming & Behavioural Issues</h3>
+      <div class="acc-meta">
+        <span class="badge badge-hot">HOT</span>
+        <div class="difficulty"><div class="d-dot on"></div><div class="d-dot on"></div><div class="d-dot on"></div></div>
+      </div>
+      <svg class="acc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="acc-body">
+      <div class="tabs">
+        <div class="tab-nav">
+          <button class="tab-btn active" onclick="switchTab(this,'beh-agency')">Agency Theory</button>
+          <button class="tab-btn" onclick="switchTab(this,'beh-gaming')">Gaming</button>
+          <button class="tab-btn" onclick="switchTab(this,'beh-slack')">Budgetary Slack</button>
+          <button class="tab-btn" onclick="switchTab(this,'beh-reward')">Reward Systems</button>
+          <button class="tab-btn" onclick="switchTab(this,'beh-short')">Short-termism</button>
+        </div>
+        <div class="tab-panel active" id="beh-agency">
+          <p class="body"><strong>Agency Theory:</strong> The relationship where one party (the PRINCIPAL — e.g., shareholders) delegates decisions to another party (the AGENT — e.g., managers). The problem: agents may not always act in the principal's best interests.</p>
+          <div class="info-grid">
+            <div class="info-card"><h5>Agency Problems in PM</h5><ul>
+              <li>Managers maximise own bonus, not shareholder wealth</li>
+              <li>Managers take less risk (job security) even when risk is justified</li>
+              <li>Information asymmetry — agents know more than principals</li>
+              <li>Short-term decisions to hit targets at cost of long-term value</li>
+            </ul></div>
+            <div class="info-card"><h5>Solutions (Aligning Interests)</h5><ul>
+              <li>Share options / long-term incentive plans (LTIPs)</li>
+              <li>Performance-related pay linked to shareholder value (TSR, EVA)</li>
+              <li>Non-financial KPIs to prevent short-termism</li>
+              <li>Independent board oversight</li>
+              <li>Monitoring and reporting systems</li>
+            </ul></div>
+          </div>
+          <div class="callout callout-exam"><strong>📋 ACCA Tests Agency Theory As:</strong> "Discuss the agency problems that may arise in [Company X] and how its reward system could address them." Identify specific agency conflicts in the scenario → explain the mechanism → recommend reward or monitoring solution.</div>
+        </div>
+        <div class="tab-panel" id="beh-gaming">
+          <p class="body"><strong>Gaming (KPI Manipulation):</strong> When managers manipulate results to hit performance targets — technically meeting the metric while defeating its purpose. This is a MAJOR APM topic.</p>
+          <div class="example-box">
+            <div class="ex-label">Real Gaming Examples</div>
+            <ul style="font-size:.82rem;color:var(--text2);line-height:1.8;list-style:disc;padding-left:18px">
+              <li>Sales manager offers heavy discounts in December to hit year-end revenue target (pulls forward future revenue)</li>
+              <li>Production manager halts maintenance investment to hit short-term cost targets (destroys long-term value)</li>
+              <li>Hospital manager discharges patients faster than clinically appropriate to hit bed turnover KPI</li>
+              <li>Call centre manager hangs up on difficult calls to improve "calls resolved" metric</li>
+              <li>Teacher "teaches to the test" to hit exam pass rate KPI instead of developing students</li>
+            </ul>
+          </div>
+          <div class="callout callout-trap"><strong>⚠️ Goodhart's Law:</strong> "When a measure becomes a target, it ceases to be a good measure." The moment you make a KPI the basis for reward, people start optimising for the KPI — not the underlying goal it was meant to represent.</div>
+          <div class="callout callout-exam"><strong>📋 ACCA Tests Gaming As:</strong> "Identify the gaming behaviours that the current KPI system may encourage" and "Recommend improvements to reduce the risk of gaming." Look for single-metric reward systems, absolute rather than balanced targets, short-term-only measures.</div>
+        </div>
+        <div class="tab-panel" id="beh-slack">
+          <p class="body"><strong>Budgetary Slack:</strong> When managers deliberately underestimate revenues or overestimate costs in their budget — creating a "buffer" that makes their targets easier to hit.</p>
+          <div class="info-grid">
+            <div class="info-card"><h5>Why Slack Happens</h5><ul>
+              <li>Bonus targets linked to budget achievement</li>
+              <li>Fear of punishment for missing targets</li>
+              <li>Information asymmetry (manager knows more than HQ)</li>
+              <li>Desire to look good / avoid scrutiny</li>
+            </ul></div>
+            <div class="info-card"><h5>Solutions</h5><ul>
+              <li>Participation in budget setting (but paradox: may increase slack)</li>
+              <li>Detailed budget justification requirements</li>
+              <li>Rolling budgets (harder to embed long-term slack)</li>
+              <li>Beyond budgeting (relative targets remove slack incentive)</li>
+              <li>Reward for budget accuracy, not just achievement</li>
+            </ul></div>
+          </div>
+        </div>
+        <div class="tab-panel" id="beh-reward">
+          <p class="body"><strong>Reward Systems:</strong> APM tests whether reward systems are designed in a way that motivates the RIGHT behaviours. Poor reward design causes gaming, short-termism, and agency problems.</p>
+          <div class="callout callout-gold"><strong>⭐ Ideal Reward System Characteristics:</strong><br>• Linked to controllable factors (fairness)<br>• Mix of financial and non-financial rewards<br>• Short and long-term components<br>• Individual and team elements<br>• Aligned with company strategy<br>• Transparent and understood by employees<br>• Challenging but achievable targets</div>
+          <div class="callout callout-trap"><strong>⚠️ Common Reward Design Failures:</strong><br>• Rewarding only financial metrics → ignores quality, ethics, sustainability<br>• Short-term bonuses only → sacrifices long-term value<br>• Rewarding individual performance → discourages teamwork<br>• Targets outside manager's control → unfair, demotivating</div>
+        </div>
+        <div class="tab-panel" id="beh-short">
+          <p class="body"><strong>Short-termism:</strong> Making decisions that look good in the current period but damage long-term performance. A systemic risk when performance management systems focus excessively on short-term financial metrics.</p>
+          <div class="info-grid">
+            <div class="info-card"><h5>Short-termist Behaviours</h5><ul>
+              <li>Cutting R&D to hit profit targets</li>
+              <li>Deferring maintenance and investment</li>
+              <li>Sacrificing customer service quality</li>
+              <li>Accepting low-margin work to hit revenue</li>
+              <li>Rejecting positive-NPV projects (ROI distortion)</li>
+            </ul></div>
+            <div class="info-card"><h5>Solutions</h5><ul>
+              <li>Long-term incentive plans (LTIPs) — 3-5 year horizon</li>
+              <li>Balanced Scorecard (non-financial measures)</li>
+              <li>EVA-based rewards (long-term value focus)</li>
+              <li>R&D spend as a required KPI</li>
+              <li>Customer satisfaction targets alongside financial</li>
+            </ul></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ SECTION 10: RISK -->
+<div class="section" id="s10">
+  <div class="section-header">
+    <div class="section-num">10</div>
+    <h2>Risk & Uncertainty in Performance Management</h2>
+  </div>
+
+  <div class="acc" data-tags="sensitivity analysis scenario planning risk adjusted performance uncertainty">
+    <div class="acc-head" onclick="toggleAcc(this)">
+      <div class="acc-icon" style="background:rgba(247,168,79,.1);color:var(--accent4)">🎲</div>
+      <h3>Sensitivity Analysis, Scenario Planning & Risk</h3>
+      <div class="acc-meta">
+        <span class="badge badge-core">CORE</span>
+      </div>
+      <svg class="acc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="acc-body">
+      <div class="tabs">
+        <div class="tab-nav">
+          <button class="tab-btn active" onclick="switchTab(this,'r-sens')">Sensitivity Analysis</button>
+          <button class="tab-btn" onclick="switchTab(this,'r-scenario')">Scenario Planning</button>
+          <button class="tab-btn" onclick="switchTab(this,'r-risk')">Risk-Adjusted PM</button>
+        </div>
+        <div class="tab-panel active" id="r-sens">
+          <p class="body"><strong>Sensitivity Analysis:</strong> "How much does X need to change before our decision changes?" Asks: how SENSITIVE is our performance outcome to changes in key variables?</p>
+          <div class="formula">Sensitivity % = (Net Benefit ÷ Change in Variable) × 100%<br><span>Or: What % change in [variable] makes NPV = zero?</span></div>
+          <p class="body"><strong>In APM:</strong> Use sensitivity to identify which KPIs are most critical to the company's strategic success. High sensitivity = small changes have big impact = needs close monitoring and tight targets.</p>
+          <div class="callout callout-exam"><strong>📋 ACCA Tests As:</strong> "Calculate the sensitivity of [project/decision] to changes in [variable] and comment on the results." — Always COMMENT — state whether the margin is comfortable or tight, and what management should do about high-sensitivity variables.</div>
+        </div>
+        <div class="tab-panel" id="r-scenario">
+          <p class="body"><strong>Scenario Planning:</strong> Develop multiple plausible futures (optimistic/base/pessimistic — or more sophisticated scenarios). Evaluate performance under each. Don't try to predict the future — prepare for multiple possible futures.</p>
+          <div class="info-grid">
+            <div class="info-card"><h5>Scenario Types</h5><ul>
+              <li>Best case (optimistic)</li>
+              <li>Most likely (base case)</li>
+              <li>Worst case (pessimistic)</li>
+              <li>Or named scenarios (e.g., "Digital Disruption", "Regulatory Tightening")</li>
+            </ul></div>
+            <div class="info-card"><h5>APM Application</h5><ul>
+              <li>Set different KPI targets for each scenario</li>
+              <li>Identify which KPIs are robust across scenarios</li>
+              <li>Trigger points — when to switch strategy</li>
+              <li>Flexible performance management system</li>
+            </ul></div>
+          </div>
+        </div>
+        <div class="tab-panel" id="r-risk">
+          <p class="body"><strong>Risk-Adjusted Performance:</strong> Should a division taking higher risks be expected to generate higher returns? Yes — the performance measure should reflect the RISK TAKEN, not just the absolute return.</p>
+          <div class="callout callout-gold"><strong>⭐ Key Concept:</strong> WACC in EVA already risk-adjusts (different risk profiles get different WACC). Risk-adjusted ROCE, Sharpe Ratio (in financial services), and risk-adjusted EVA are all ways to assess whether performance justifies the risk taken.</div>
+          <div class="callout callout-exam"><strong>📋 ACCA Tests This As:</strong> When comparing divisions in different industries/risk profiles — argue that using the SAME hurdle rate/cost of capital for all divisions is inappropriate. Recommend risk-adjusted measures.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ SECTION 11: PUBLIC SECTOR -->
+<div class="section" id="s11">
+  <div class="section-header">
+    <div class="section-num">11</div>
+    <h2>Public Sector & Not-for-Profit Performance</h2>
+  </div>
+
+  <div class="acc" data-tags="value for money 3Es economy efficiency effectiveness public sector NFP not for profit service quality VFM">
+    <div class="acc-head" onclick="toggleAcc(this)">
+      <div class="acc-icon" style="background:rgba(0,212,170,.1);color:var(--accent3)">🏛️</div>
+      <h3>Value for Money (3Es) & NFP Performance</h3>
+      <div class="acc-meta">
+        <span class="badge badge-hot">HOT</span>
+      </div>
+      <svg class="acc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="acc-body">
+      <p class="body"><strong>The Problem:</strong> Public sector and NFP organisations don't exist to make profit. Traditional financial performance measures (ROI, profit margin) don't apply. How do you measure their performance?</p>
+      <p class="body"><strong>Value for Money (VFM) Framework:</strong> The 3Es provide a structured way to assess performance in non-profit contexts.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin:14px 0">
+        <div style="background:rgba(79,142,247,.06);border:1px solid rgba(79,142,247,.2);border-radius:8px;padding:14px;text-align:center">
+          <div style="font-size:1.5rem;margin-bottom:8px">💰</div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;color:var(--accent);font-size:.9rem;margin-bottom:6px">Economy</div>
+          <div style="font-size:.75rem;color:var(--text2)">Getting inputs at LOWEST COST (without sacrificing quality)<br><br>"Are we buying cheaply?"</div>
+          <div style="font-size:.7rem;color:var(--text3);margin-top:8px">KPIs: Cost per unit input, procurement savings, unit cost trends</div>
+        </div>
+        <div style="background:rgba(0,212,170,.06);border:1px solid rgba(0,212,170,.2);border-radius:8px;padding:14px;text-align:center">
+          <div style="font-size:1.5rem;margin-bottom:8px">⚙️</div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;color:var(--accent3);font-size:.9rem;margin-bottom:6px">Efficiency</div>
+          <div style="font-size:.75rem;color:var(--text2)">Getting maximum OUTPUT from inputs used<br><br>"Are we using what we buy well?"</div>
+          <div style="font-size:.7rem;color:var(--text3);margin-top:8px">KPIs: Output per employee, patients per doctor, students per teacher</div>
+        </div>
+        <div style="background:rgba(245,200,66,.06);border:1px solid rgba(245,200,66,.2);border-radius:8px;padding:14px;text-align:center">
+          <div style="font-size:1.5rem;margin-bottom:8px">🎯</div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;color:var(--gold);font-size:.9rem;margin-bottom:6px">Effectiveness</div>
+          <div style="font-size:.75rem;color:var(--text2)">Actually achieving the OBJECTIVES set<br><br>"Did we achieve what we set out to do?"</div>
+          <div style="font-size:.7rem;color:var(--text3);margin-top:8px">KPIs: Patient recovery rates, exam pass rates, crime reduction %</div>
+        </div>
+      </div>
+      <div class="callout callout-gold"><strong>⭐ VFM Key Insight:</strong> It's possible to be economical but ineffective (buy cheap nurses → poor patient care → patients readmitted → poor effectiveness). The 3Es must be balanced, not just optimised individually.</div>
+      <p class="body"><strong>Additional Es sometimes added:</strong> Equity (is the service fair/accessible to all?), Environment (sustainability of service delivery), Ethics (are services delivered ethically?).</p>
+      <div class="callout callout-exam"><strong>📋 ACCA Tests VFM As:</strong> "Assess [Hospital/School/Council]'s performance using the value for money framework" — Apply each E to the scenario data. Identify conflicts (e.g., economy cuts threatening effectiveness). Recommend KPIs for each dimension. Discuss measurement difficulties (especially effectiveness).</div>
+      <div class="callout callout-trap"><strong>⚠️ Hardest E to Measure: Effectiveness.</strong> Economy and efficiency can often be measured quantitatively. But "did the service actually achieve its social purpose?" is much harder. How do you measure whether a rehabilitation programme actually reduces reoffending? ACCA loves discussing this complexity.</div>
+      <div class="example-box">
+        <div class="ex-label">Mini Case: NHS Hospital</div>
+        <table class="tbl">
+          <thead><tr><th>E</th><th>Measure</th><th>Example KPI</th></tr></thead>
+          <tbody>
+            <tr><td>Economy</td><td>Input costs</td><td>Cost per bed per day; drug procurement cost vs benchmark</td></tr>
+            <tr><td>Efficiency</td><td>Throughput</td><td>Patients treated per doctor; average length of hospital stay; bed occupancy rate</td></tr>
+            <tr><td>Effectiveness</td><td>Outcomes</td><td>30-day readmission rate; patient satisfaction score; surgical success rate; waiting time vs target</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ SECTION 12: ESG -->
+<div class="section" id="s12">
+  <div class="section-header">
+    <div class="section-num">12</div>
+    <h2>ESG & Sustainability Performance</h2>
+  </div>
+
+  <div class="acc" data-tags="ESG sustainability CSR integrated reporting carbon emissions social governance environmental">
+    <div class="acc-head" onclick="toggleAcc(this)">
+      <div class="acc-icon" style="background:rgba(168,224,99,.1);color:var(--accent6)">🌱</div>
+      <h3>ESG, CSR & Integrated Reporting</h3>
+      <div class="acc-meta">
+        <span class="badge badge-hot">🔥 VERY HOT</span>
+        <span class="badge badge-new">GROWING</span>
+      </div>
+      <svg class="acc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="acc-body">
+      <div class="tabs">
+        <div class="tab-nav">
+          <button class="tab-btn active" onclick="switchTab(this,'esg-basics')">ESG Framework</button>
+          <button class="tab-btn" onclick="switchTab(this,'esg-kpis')">Sustainability KPIs</button>
+          <button class="tab-btn" onclick="switchTab(this,'esg-ir')">Integrated Reporting</button>
+          <button class="tab-btn" onclick="switchTab(this,'esg-exam')">ACCA Exam</button>
+        </div>
+        <div class="tab-panel active" id="esg-basics">
+          <p class="body"><strong>ESG:</strong> Environmental, Social, and Governance — a framework for measuring non-financial performance that increasingly matters to investors, customers, regulators, and employees.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin:14px 0">
+            <div style="background:rgba(168,224,99,.06);border:1px solid rgba(168,224,99,.25);border-radius:8px;padding:14px">
+              <h5 style="color:var(--accent6);margin-bottom:8px">🌍 Environmental</h5>
+              <ul class="styled"><li>Carbon emissions (Scope 1,2,3)</li><li>Energy consumption & renewable %</li><li>Water usage</li><li>Waste generation & recycling</li><li>Biodiversity impact</li><li>Supply chain sustainability</li></ul>
+            </div>
+            <div style="background:rgba(79,142,247,.06);border:1px solid rgba(79,142,247,.25);border-radius:8px;padding:14px">
+              <h5 style="color:var(--accent);margin-bottom:8px">👥 Social</h5>
+              <ul class="styled"><li>Employee wellbeing & safety</li><li>Diversity & inclusion metrics</li><li>Community investment</li><li>Human rights in supply chain</li><li>Employee pay equity</li><li>Customer data privacy</li></ul>
+            </div>
+            <div style="background:rgba(245,200,66,.06);border:1px solid rgba(245,200,66,.25);border-radius:8px;padding:14px">
+              <h5 style="color:var(--gold);margin-bottom:8px">🏛️ Governance</h5>
+              <ul class="styled"><li>Board independence & diversity</li><li>Executive pay vs employee pay ratio</li><li>Anti-bribery policies</li><li>Tax transparency</li><li>Whistleblowing mechanisms</li><li>Ethics policy compliance</li></ul>
+            </div>
+          </div>
+          <div class="callout callout-gold"><strong>⭐ Why ESG Matters for APM:</strong> ESG performance is increasingly linked to financial performance — companies with poor ESG face higher capital costs, regulatory fines, reputation damage, and talent difficulties. ESG KPIs belong in a modern Balanced Scorecard.</div>
+        </div>
+        <div class="tab-panel" id="esg-kpis">
+          <p class="body"><strong>Sustainability KPIs — the ACCA expects you to recommend specific, measurable sustainability metrics:</strong></p>
+          <table class="tbl">
+            <thead><tr><th>Area</th><th>KPI</th><th>Target Example</th></tr></thead>
+            <tbody>
+              <tr><td>Carbon (E)</td><td>Total Scope 1+2 CO₂ emissions (tonnes)</td><td>30% reduction by 2030 vs 2020 baseline</td></tr>
+              <tr><td>Energy (E)</td><td>Renewable energy as % of total consumption</td><td>100% renewable by 2025</td></tr>
+              <tr><td>Waste (E)</td><td>Waste sent to landfill (tonnes)</td><td>Zero landfill by 2028</td></tr>
+              <tr><td>Safety (S)</td><td>Lost Time Injury rate (per 1000 employees)</td><td>Below 0.5 per year</td></tr>
+              <tr><td>Diversity (S)</td><td>Women in senior management (%)</td><td>40% by 2025</td></tr>
+              <tr><td>Pay Equity (S)</td><td>Gender pay gap (%)</td><td>Under 5% by 2024</td></tr>
+              <tr><td>Board (G)</td><td>Independent directors as % of board</td><td>Minimum 50%</td></tr>
+              <tr><td>Ethics (G)</td><td>Bribery incidents reported and resolved</td><td>100% resolution within 30 days</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tab-panel" id="esg-ir">
+          <p class="body"><strong>Integrated Reporting (IR):</strong> Reporting framework that shows how an organisation creates VALUE over time — financial AND non-financial. Goes beyond annual report to show linkages between strategy, performance, and capital utilisation.</p>
+          <div class="info-grid">
+            <div class="info-card"><h5>6 Capitals (IIRC Framework)</h5><ul>
+              <li>Financial capital</li>
+              <li>Manufactured capital</li>
+              <li>Intellectual capital</li>
+              <li>Human capital</li>
+              <li>Social & relationship capital</li>
+              <li>Natural capital</li>
+            </ul></div>
+            <div class="info-card"><h5>Benefits of Integrated Reporting</h5><ul>
+              <li>Shows how non-financial creates financial value</li>
+              <li>Better stakeholder communication</li>
+              <li>Encourages longer-term thinking</li>
+              <li>Identifies trade-offs between capitals</li>
+              <li>Reduces short-termism in strategy</li>
+            </ul></div>
+          </div>
+          <div class="callout callout-trap"><strong>⚠️ Limitation:</strong> No standard format for Integrated Reporting — hard to compare between companies. Qualitative elements can be "greenwashing" — vague positive statements without substance. Quantifying natural capital (e.g., value of biodiversity) is inherently subjective.</div>
+        </div>
+        <div class="tab-panel" id="esg-exam">
+          <div class="callout callout-exam"><strong>📋 How ACCA Tests ESG (Growing Area):</strong><br>"Recommend sustainability KPIs for [Company X] and explain how they link to strategic objectives"<br>"Discuss the advantages and limitations of integrated reporting for [Company X]"<br>"Evaluate how [Company X]'s ESG performance should be included in its performance management system"<br>"Assess the stakeholder implications of [Company X]'s sustainability strategy"</div>
+          <div class="answer-box">
+            <div class="ans-label">✍️ ESG KPI Recommendation Framework</div>
+            <p style="font-size:.82rem;color:var(--text2);line-height:1.7"><strong>Step 1:</strong> Identify the company's most material ESG issues (from the scenario — industry-specific)<br><strong>Step 2:</strong> For each material issue, recommend a SPECIFIC measurable KPI (not "reduce emissions" but "reduce Scope 1+2 CO₂ by 30% by 2027 vs 2022 baseline")<br><strong>Step 3:</strong> Explain WHY this KPI is relevant to this specific company<br><strong>Step 4:</strong> Explain how it links to financial performance (regulatory risk, customer preference, cost reduction, talent attraction)<br><strong>Step 5:</strong> Note measurement challenges and data requirements</p>
+          </div>
+          <div class="callout callout-trap"><strong>⚠️ Greenwashing Risk:</strong> ACCA may ask you to identify whether a company's ESG reporting constitutes greenwashing — vague claims, no targets, no independent verification. Recommend: specific targets, third-party assurance, and reporting against recognised frameworks (GRI, TCFD, SASB).</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ SECTION 13: ETHICS -->
+<div class="section" id="s13">
+  <div class="section-header">
+    <div class="section-num">13</div>
+    <h2>Ethics & Professional Skills in APM</h2>
+  </div>
+
+  <div class="acc" data-tags="ethics KPI manipulation ethical reporting stakeholder conflicts professional skills">
+    <div class="acc-head" onclick="toggleAcc(this)">
+      <div class="acc-icon" style="background:rgba(124,92,252,.1);color:var(--accent2)">⚖️</div>
+      <h3>Ethics in Performance Management</h3>
+      <div class="acc-meta">
+        <span class="badge badge-hot">HOT</span>
+      </div>
+      <svg class="acc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="acc-body">
+      <p class="body"><strong>Ethics in APM:</strong> The professional skills marks in APM often test your ability to identify ethical issues and respond professionally. Ethics appears throughout — in KPI design, reporting, transfer pricing, reward systems, and sustainability.</p>
+      <div class="info-grid">
+        <div class="info-card"><h5>Ethical Issues in PM Systems</h5><ul>
+          <li>KPI manipulation to boost executive bonuses</li>
+          <li>Reporting only favourable sustainability data</li>
+          <li>Transfer pricing manipulation to evade tax</li>
+          <li>Using performance data to unfairly target employees</li>
+          <li>Setting unrealistic targets causing staff burnout</li>
+          <li>Prioritising shareholder returns over safety</li>
+        </ul></div>
+        <div class="info-card"><h5>Professional Response Framework</h5><ul>
+          <li>Identify the ethical issue clearly</li>
+          <li>Consider who is affected (stakeholders)</li>
+          <li>Reference professional principles (ACCA Code)</li>
+          <li>Consider consequences of each course of action</li>
+          <li>Recommend appropriate action (escalate, refuse, disclose)</li>
+          <li>Maintain objectivity — don't be pressured</li>
+        </ul></div>
+      </div>
+      <div class="callout callout-exam"><strong>📋 Professional Skills Marks in APM:</strong><br>• Communication — clear, professional, tailored to audience<br>• Commercial acumen — understand business context<br>• Analysis — depth of reasoning, not superficial<br>• Scepticism — challenge assumptions, identify risks<br>• Evaluation — balanced, considering multiple perspectives</div>
+      <div class="callout callout-trap"><strong>⚠️ Professional Skills Trap:</strong> Many students ignore the professional skills requirement and write as if answering a purely technical question. Professional skills marks (up to 20% of total) require you to write in a professional, structured, commercially aware manner — not academic bullet points.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ SECTION 14: EXAM TECHNIQUE -->
+<div class="section" id="s14">
+  <div class="section-header">
+    <div class="section-num">14</div>
+    <h2>APM Exam Technique — How to Actually Pass</h2>
+  </div>
+  <p class="section-desc">The gap between knowing the content and passing APM is EXAM TECHNIQUE. Many well-prepared students fail because they don't know how to deploy their knowledge effectively.</p>
+
+  <div class="acc" data-tags="exam technique professional skills answer structure time management how to pass APM command verbs">
+    <div class="acc-head" onclick="toggleAcc(this)">
+      <div class="acc-icon" style="background:rgba(79,142,247,.1);color:var(--accent)">🎓</div>
+      <h3>APM Answer Strategy — Complete Guide</h3>
+      <div class="acc-meta">
+        <span class="badge badge-hot">🔥 ESSENTIAL</span>
+      </div>
+      <svg class="acc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="acc-body">
+      <div class="tabs">
+        <div class="tab-nav">
+          <button class="tab-btn active" onclick="switchTab(this,'et-structure')">Answer Structure</button>
+          <button class="tab-btn" onclick="switchTab(this,'et-commands')">Command Verbs</button>
+          <button class="tab-btn" onclick="switchTab(this,'et-time')">Time Management</button>
+          <button class="tab-btn" onclick="switchTab(this,'et-fail')">Why Students Fail</button>
+          <button class="tab-btn" onclick="switchTab(this,'et-score')">Score 50+</button>
+        </div>
+        <div class="tab-panel active" id="et-structure">
+          <p class="body"><strong>The Golden APM Answer Framework:</strong></p>
+          <div style="counter-reset:step">
+            <div style="display:grid;grid-template-columns:auto 1fr;gap:12px;margin-bottom:12px;align-items:start">
+              <div style="background:var(--accent);color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:700;font-size:.85rem;flex-shrink:0">1</div>
+              <div style="background:rgba(79,142,247,.06);border:1px solid rgba(79,142,247,.2);border-radius:8px;padding:12px"><strong>Read the scenario — TWICE</strong><br><span style="font-size:.8rem;color:var(--text2)">First read: big picture — what industry, what problems, what strategy? Second read: underline specific data, facts, and issues that are relevant to the requirement.</span></div>
+            </div>
+            <div style="display:grid;grid-template-columns:auto 1fr;gap:12px;margin-bottom:12px;align-items:start">
+              <div style="background:var(--accent2);color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:700;font-size:.85rem;flex-shrink:0">2</div>
+              <div style="background:rgba(124,92,252,.06);border:1px solid rgba(124,92,252,.2);border-radius:8px;padding:12px"><strong>Identify the command verb</strong><br><span style="font-size:.8rem;color:var(--text2)">"Evaluate" ≠ "Describe" ≠ "Advise" ≠ "Discuss." Each has a different depth requirement. Never answer a different question to the one asked.</span></div>
+            </div>
+            <div style="display:grid;grid-template-columns:auto 1fr;gap:12px;margin-bottom:12px;align-items:start">
+              <div style="background:var(--accent3);color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:700;font-size:.85rem;flex-shrink:0">3</div>
+              <div style="background:rgba(0,212,170,.06);border:1px solid rgba(0,212,170,.2);border-radius:8px;padding:12px"><strong>Plan your answer (3–5 minutes)</strong><br><span style="font-size:.8rem;color:var(--text2)">List your main points. Identify which model/framework applies. Don't start writing immediately — planned answers score more marks and don't ramble.</span></div>
+            </div>
+            <div style="display:grid;grid-template-columns:auto 1fr;gap:12px;margin-bottom:12px;align-items:start">
+              <div style="background:var(--gold);color:#000;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:700;font-size:.85rem;flex-shrink:0">4</div>
+              <div style="background:rgba(245,200,66,.06);border:1px solid rgba(245,200,66,.2);border-radius:8px;padding:12px"><strong>Write with SCENARIO integration</strong><br><span style="font-size:.8rem;color:var(--text2)">EVERY point must reference the specific company, industry, or data from the scenario. Generic theory with no application = near zero marks in APM.</span></div>
+            </div>
+            <div style="display:grid;grid-template-columns:auto 1fr;gap:12px;margin-bottom:12px;align-items:start">
+              <div style="background:var(--accent4);color:#000;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:700;font-size:.85rem;flex-shrink:0">5</div>
+              <div style="background:rgba(247,168,79,.06);border:1px solid rgba(247,168,79,.2);border-radius:8px;padding:12px"><strong>Develop each point (PEEL or POINT-EXPLAIN-EVIDENCE-LINK)</strong><br><span style="font-size:.8rem;color:var(--text2)">Don't make a list of shallow points. Make fewer, deeper points. "Customer satisfaction is falling" → "Customer satisfaction is falling (POINT) because [data from scenario] (EVIDENCE) which suggests [analysis] (EXPLAIN) and therefore [company X] should [recommendation] (LINK)."</span></div>
+            </div>
+            <div style="display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start">
+              <div style="background:var(--accent5);color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:700;font-size:.85rem;flex-shrink:0">6</div>
+              <div style="background:rgba(247,95,95,.06);border:1px solid rgba(247,95,95,.2);border-radius:8px;padding:12px"><strong>Conclude or Recommend</strong><br><span style="font-size:.8rem;color:var(--text2)">APM questions usually require a conclusion or recommendation. Don't leave your answer hanging. "On balance, [Company X] should adopt [model/approach] because [top 2 reasons], whilst acknowledging [key limitation]."</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-panel" id="et-commands">
+          <div class="cv-grid">
+            <div class="cv-card"><div class="cv-verb">Evaluate</div><div class="cv-desc">Assess the value/suitability/effectiveness of something. Give pros AND cons. Make a judgement. This is the hardest verb — requires depth and balance.</div><div class="cv-depth">Depth: Deep — analyse both sides, conclude</div></div>
+            <div class="cv-card"><div class="cv-verb">Assess</div><div class="cv-desc">Similar to evaluate — consider strengths and weaknesses. Make a clear judgement about the significance of each factor.</div><div class="cv-depth">Depth: Deep — analyse and conclude</div></div>
+            <div class="cv-card"><div class="cv-verb">Discuss</div><div class="cv-desc">Present different perspectives, arguments for and against. Broader than evaluate — you may not always need to conclude, but generally should.</div><div class="cv-depth">Depth: Medium-deep — balanced views</div></div>
+            <div class="cv-card"><div class="cv-verb">Advise</div><div class="cv-desc">Give a specific, actionable recommendation. Focus on WHAT to do and WHY. Write as if advising a real client — be commercially practical.</div><div class="cv-depth">Depth: Practical — recommendation + rationale</div></div>
+            <div class="cv-card"><div class="cv-verb">Recommend</div><div class="cv-desc">Propose a specific course of action. Back it up with reasoning from the scenario. More decisive than "advise."</div><div class="cv-depth">Depth: Decisive — clear recommendation</div></div>
+            <div class="cv-card"><div class="cv-verb">Explain</div><div class="cv-desc">Make the meaning clear. Why does this happen? What does it mean? Usually 1-2 paragraphs on each point. Don't just define — explain the IMPACT.</div><div class="cv-depth">Depth: Medium — clear explanation</div></div>
+            <div class="cv-card"><div class="cv-verb">Identify</div><div class="cv-desc">Recognise and list. Usually lower depth. But in APM, even "identify" requires justification from the scenario — not just a list.</div><div class="cv-depth">Depth: Lower — identify with brief justification</div></div>
+            <div class="cv-card"><div class="cv-verb">Calculate</div><div class="cv-desc">Show full workings. Label every figure. Include units. Round sensibly. ALWAYS include a brief comment on what the number MEANS — the calculation alone won't get all marks.</div><div class="cv-depth">Depth: Numerical + interpretation</div></div>
+          </div>
+        </div>
+        <div class="tab-panel" id="et-time">
+          <p class="body"><strong>APM Time Allocation (3 hours 15 minutes including reading):</strong></p>
+          <div class="formula">Time per mark = approximately 1.95 minutes<br><span><br>Section A (50 marks, compulsory case study): ~97 minutes<br>Section B (50 marks, choose 2 from 3): ~50 mins each (~25 mins per 25-mark question)<br>Reading time (15 mins): Use to plan BOTH sections</span></div>
+          <div class="callout callout-trap"><strong>⚠️ Time Management Disasters to Avoid:</strong><br>1. Over-running on the first question → leaving 20 marks unanswered at the end<br>2. Spending too long on calculations when discussion marks are easier to get<br>3. Writing very long paragraphs on things you know well, neglecting areas you know less<br>4. Not attempting ALL parts of every question (each part has easy marks)</div>
+          <div class="callout callout-tip"><strong>💡 Mark-Efficient Strategy:</strong> In any written question, the first point is worth most (easy marks for knowing the topic). The 10th point on the same topic is worth least. It's almost ALWAYS better to make 6 different good points than 3 excellent points on a 10-mark question.</div>
+        </div>
+        <div class="tab-panel" id="et-fail">
+          <div class="callout callout-trap"><strong>Top 10 Reasons APM Students Fail:</strong></div>
+          <ol class="styled" style="list-style:decimal;padding-left:20px">
+            <li style="font-size:.83rem;color:var(--text2);margin-bottom:8px"><strong>Generic answers with no scenario application</strong> — "BSC is good because it uses four perspectives" without linking to the specific company gets almost zero</li>
+            <li style="font-size:.83rem;color:var(--text2);margin-bottom:8px"><strong>Describing models instead of applying them</strong> — Examiner knows what EVA is. They want to know what it means FOR THIS COMPANY</li>
+            <li style="font-size:.83rem;color:var(--text2);margin-bottom:8px"><strong>Listing bullet points without development</strong> — Each point needs EXPLANATION and EVIDENCE from the scenario</li>
+            <li style="font-size:.83rem;color:var(--text2);margin-bottom:8px"><strong>Answering a different question</strong> — "Advise" ≠ "Evaluate." Always answer the question asked</li>
+            <li style="font-size:.83rem;color:var(--text2);margin-bottom:8px"><strong>Ignoring professional skills marks</strong> — Write professionally, not in exam-note format</li>
+            <li style="font-size:.83rem;color:var(--text2);margin-bottom:8px"><strong>Only looking at financial performance</strong> — APM is about STRATEGIC performance including non-financial</li>
+            <li style="font-size:.83rem;color:var(--text2);margin-bottom:8px"><strong>Poor time management</strong> — Running out of time before attempting all questions</li>
+            <li style="font-size:.83rem;color:var(--text2);margin-bottom:8px"><strong>No conclusion/recommendation</strong> — Most APM questions expect a judgement</li>
+            <li style="font-size:.83rem;color:var(--text2);margin-bottom:8px"><strong>Ignoring the data in exhibits</strong> — The numbers in appendices are there to be USED. Reference them specifically</li>
+            <li style="font-size:.83rem;color:var(--text2);margin-bottom:8px"><strong>Revising breadth but not depth</strong> — APM rewards insight over recall. Practice application questions, not just reading notes</li>
+          </ol>
+        </div>
+        <div class="tab-panel" id="et-score">
+          <p class="body"><strong>How to Score 50+ in APM:</strong></p>
+          <div class="callout callout-gold"><strong>⭐ The 50+ Formula:</strong><br>Strong scenario reading + Right model selection + Deep application + SMART KPIs + Balanced evaluation + Professional writing = PASS</div>
+          <div class="info-grid">
+            <div class="info-card"><h5>Marks Available You Should ALWAYS Get</h5><ul>
+              <li>For correctly identifying the relevant model/framework from scenario clues</li>
+              <li>For accurately referencing specific figures/facts from the scenario</li>
+              <li>For a clear structure (intro, body, conclusion)</li>
+              <li>For discussing BOTH advantages AND disadvantages</li>
+              <li>For providing a clear recommendation at the end</li>
+            </ul></div>
+            <div class="info-card"><h5>Marks That Separate Pass from Fail</h5><ul>
+              <li>Identifying the SUBTLETY in the scenario (e.g., recognising dysfunctional behaviour)</li>
+              <li>Linking non-financial factors to financial impact</li>
+              <li>Recommending SMART, specific KPIs with targets</li>
+              <li>Professional skills — written for senior management, not for an examiner</li>
+              <li>Showing awareness of behavioural/ethical implications</li>
+            </ul></div>
+          </div>
+          <div class="answer-box">
+            <div class="ans-label">✍️ The Perfect APM Paragraph (Use This Template)</div>
+            <p style="font-size:.82rem;color:var(--text2);line-height:1.8">[IDENTIFY ISSUE FROM SCENARIO]: "The data shows that customer complaints have increased by 40% over the past year at [Company X]."<br><br>[ANALYSE/EXPLAIN WHY IT MATTERS]: "This suggests a significant deterioration in service quality which, if unaddressed, will damage [Company X]'s brand reputation and may lead to customer attrition — particularly concerning given the highly competitive market identified in the scenario."<br><br>[LINK TO FRAMEWORK/MODEL]: "This would be captured in the Customer perspective of a Balanced Scorecard, which [Company X]'s current system appears to lack."<br><br>[RECOMMEND WITH SPECIFICITY]: "I would recommend introducing a Net Promoter Score (NPS) target of +35 within 12 months, measured through monthly surveys of 500 customers, with the results reported to the Board quarterly."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ SECTION 15: QUICK REVISION -->
+<div class="section" id="s15">
+  <div class="section-header">
+    <div class="section-num">15</div>
+    <h2>Quick Revision Maps & Topic Connections</h2>
+  </div>
+
+  <div class="acc open" data-tags="revision mind map topic connections quick reference most tested high priority">
+    <div class="acc-head" onclick="toggleAcc(this)">
+      <div class="acc-icon" style="background:rgba(245,200,66,.1);color:var(--gold)">⚡</div>
+      <h3>APM Topic Connection Map</h3>
+      <div class="acc-meta"><span class="badge badge-hot">REVISION</span></div>
+      <svg class="acc-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="acc-body">
+      <p class="body">Topics in APM are deeply connected. Understanding these links is what separates distinction-level answers from pass-level answers.</p>
+      <table class="tbl">
+        <thead><tr><th>If scenario mentions…</th><th>Think about…</th><th>Connect to…</th></tr></thead>
+        <tbody>
+          <tr><td>Divisional structure</td><td>ROI/RI/EVA, Transfer Pricing, Goal Congruence</td><td>Agency theory, short-termism, reward design</td></tr>
+          <tr><td>Customer complaints / falling quality</td><td>TQM, Kaizen, Cost of Quality</td><td>BSC Customer perspective, brand damage, competitive position (Porter)</td></tr>
+          <tr><td>Only financial KPIs</td><td>Balanced Scorecard, Building Block Model</td><td>Short-termism, gaming, stakeholder analysis (Mendelow)</td></tr>
+          <tr><td>New market entry / growth</td><td>Ansoff, BCG, PESTEL</td><td>Lifecycle costing, target costing, new KPI design</td></tr>
+          <tr><td>Public sector / charity</td><td>VFM (3Es), ZBB, NFP KPIs</td><td>Fitzgerald & Moon, stakeholder conflicts (Mendelow)</td></tr>
+          <tr><td>Environmental concerns</td><td>ESG, sustainability KPIs, integrated reporting</td><td>Stakeholder management, regulatory risk (PESTEL), BSC</td></tr>
+          <tr><td>Technology / digital transformation</td><td>Big Data, AI, predictive analytics</td><td>PESTEL, competitive advantage (Porter), risk management</td></tr>
+          <tr><td>Manager behaviour / bonus issues</td><td>Agency theory, gaming, reward systems</td><td>Goal congruence, ROI dysfunctionality, beyond budgeting</td></tr>
+          <tr><td>Supply chain / operations</td><td>Value Chain, JIT, Lean, Throughput</td><td>Cost management, quality, benchmarking</td></tr>
+        </tbody>
+      </table>
+      <div class="callout callout-gold"><strong>⭐ Most Tested Topics (by ACCA frequency analysis):</strong><br>1. Balanced Scorecard (almost every exam) &nbsp; 2. ROI/RI/EVA calculation and evaluation &nbsp; 3. Transfer Pricing &nbsp; 4. KPI design with SMART targets &nbsp; 5. Behavioural aspects (gaming, short-termism, agency) &nbsp; 6. Value for Money (public sector) &nbsp; 7. Divisional performance evaluation &nbsp; 8. ESG/Sustainability (growing rapidly)</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ MODALS -->
+<div id="modal-overlay" onclick="closeModalOutside(event)">
+  <div id="modal">
+    <div class="modal-head">
+      <h2 id="modal-title">Modal</h2>
+      <div class="modal-close" onclick="closeModal()">✕</div>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+<footer style="background:var(--bg2);border-top:1px solid var(--border);padding:32px 24px;text-align:center;margin-top:48px">
+  <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:.9rem;color:var(--text3);margin-bottom:8px">APM★HUB — Ultimate ACCA APM Master Framework</div>
+  <div style="font-size:.78rem;color:var(--text3)">Built for ACCA APM students. All content aligned with ACCA official guidance, examiner reports, and APM syllabus. Press <kbd style="background:var(--bg3);border:1px solid var(--border2);border-radius:4px;padding:2px 6px;font-size:.75rem">/</kbd> to search anytime.</div>
+</footer>
+
+</body>
+</html>
